@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Камиля Багдалова](https://up.htmlacademy.ru/adaptive/29/user/866325).
-* Наставник: [Дарья Шестерина](https://up.htmlacademy.ru/adaptive/29/tutors).
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124)
 
 ---
 
