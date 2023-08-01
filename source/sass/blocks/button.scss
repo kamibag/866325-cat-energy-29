@@ -1,10 +1,16 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 20px;
   text-decoration: none;
   background: $basic-green;
+  border: none;
+  outline: none;
 
   &:hover {
     background: $basic-green-2;
+    cursor: pointer;
   }
 
   &:active {

@@ -1,0 +1,101 @@
+.form {
+
+}
+
+.form__area-input {
+
+}
+
+.form__inner {
+
+}
+
+.form__label {
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $special-dark-grey;
+}
+
+.form__input-text {
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $special-dark-grey;
+  border: 1px solid $grey-border-input;
+
+  &::placeholder {
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $special-dark-grey;
+  }
+
+  &--email{
+    border: 1px solid $special-grey;
+  }
+
+  &--phone {
+    border: 1px solid $special-grey;
+  }
+}
+
+.form__area-radio {
+  border-top: 1px solid $grey-line;
+  border-bottom: 1px solid $grey-line;
+}
+
+.form__input-radio {
+
+}
+
+.form__area-owner-cat {
+
+}
+
+.form__title {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $black;
+}
+
+.form__textarea {
+  resize: none;
+  border: 1px solid $grey-border-input;
+
+  &::placeholder {
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $special-dark-grey;
+  }
+}
+
+.form__bottom{
+
+}
+
+.form__button{
+
+}
+
+.form__required {
+
+}
+
+.form__required-text {
+  font-family: Lato, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: $black;
+}
+
+

@@ -1,4 +1,7 @@
 .top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(to top, transparent 175px, rgba($basic-green, 0.85) 175px), url("../img/slider-cat-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center bottom 175px;
