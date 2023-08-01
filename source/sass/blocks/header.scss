@@ -9,10 +9,24 @@
 
 .header__logo {
 
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
 }
 
 .header__logo-text {
 
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
 }
 
 .header__button {
