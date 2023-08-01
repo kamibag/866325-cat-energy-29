@@ -1,0 +1,73 @@
+.living-example {
+  background: $grey-background;
+}
+
+.living-example__wrapper {
+
+}
+
+.living-example__title {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: $black;
+
+}
+
+.living-example__description {
+  font-family: Lato, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: $special-dark-grey;
+}
+
+.living-example__content {
+
+}
+
+.living-example__item {
+
+}
+
+.living-example__key {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+
+}
+
+.living-example__value {
+  margin: 0;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  color: $special-dark-grey;
+}
+
+.living-example__price {
+
+}
+
+.living-example__price-text {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.living-example__compare-slider {
+
+}

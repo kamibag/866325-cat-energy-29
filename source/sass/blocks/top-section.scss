@@ -1,0 +1,33 @@
+.top-section {
+  background-image: linear-gradient(to top, transparent 175px, rgba($basic-green, 0.85) 175px), url("../img/slider-cat-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center bottom 175px;
+}
+
+.top-section__wrapper {
+
+}
+
+.top-section__program{
+
+}
+
+.top-section__title{
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: $white;
+}
+
+.top-section__subtitle {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+
+}

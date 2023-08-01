@@ -1,0 +1,26 @@
+.nav {
+
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+
+}
+
+.nav__item {
+
+
+  &--current{
+
+  }
+}
+
+.nav__link {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  color: $black;
+}

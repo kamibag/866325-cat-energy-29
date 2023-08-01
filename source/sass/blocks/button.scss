@@ -1,0 +1,45 @@
+.button {
+  padding: 10px 20px;
+  text-decoration: none;
+  background: $basic-green;
+
+  &:hover {
+    background: $basic-green-2;
+  }
+
+  &:active {
+
+  }
+
+  &:active > &__text {
+    opacity: 0.3;
+  }
+
+  &--second {
+    background: $basic-grey;
+
+    &:hover {
+      background: $special-grey-2;
+    }
+
+    &:active > .button__text--second {
+      opacity: 0.3;
+    }
+  }
+
+
+}
+
+.button__text {
+
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: $white;
+
+  &--second {
+    color: $special-dark-grey;
+  }
+}

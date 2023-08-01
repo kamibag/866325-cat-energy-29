@@ -1,0 +1,48 @@
+.how-works {
+  background: $white;
+}
+
+.how-works__wrapper {
+
+}
+
+.how-works__title {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: $black;
+}
+
+.how-works__list {
+  padding: 0;
+  list-style: none;
+}
+
+.how-works__item {
+
+}
+
+.how-works__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: $basic-green;
+
+}
+
+.how-works__icon{
+
+}
+
+.how-works__description {
+  font-family: Lato, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+
+}
