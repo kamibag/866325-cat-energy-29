@@ -1,5 +1,11 @@
 .programs-item {
+
+  padding: 20px;
   background: $basic-grey;
+
+  &:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
 }
 
 .programs-item__image {
@@ -7,6 +13,7 @@
 }
 
 .programs-item__title {
+  margin: 0;
   font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -16,16 +23,20 @@
 }
 
 .programs-item__description {
+  margin: 0;
+  padding: 10px 0;
   font-family: Lato, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  color: $black;
+  color: $special-dark-grey;;
   border-bottom: 1px solid $grey-line;
 }
 
 .programs-item__link {
+  display: inline-block;
+  margin: 15px 0 0;
   text-decoration: none;
 
   &:active {
@@ -39,6 +50,7 @@
   font-weight: 400;
   line-height: 16px;
   text-align: center;
+  text-transform: uppercase;
   color: $black;
 
 }

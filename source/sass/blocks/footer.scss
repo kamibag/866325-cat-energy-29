@@ -1,9 +1,13 @@
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   background: $grey-background-2;
 }
 
 .footer__wrapper {
-
+width: 100%;
 }
 
 .footer__logo-text {

@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   background: $grey-background;
+  padding: 20px;
 }
 
 .living-example__wrapper {
@@ -10,11 +11,11 @@
 }
 
 .living-example__title {
+  margin: 10px 0 20px;
   font-family: Oswald, Arial, sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  text-align: center;
   color: $black;
 
 }
@@ -33,7 +34,10 @@
 }
 
 .living-example__item {
-
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: 1px solid $special-grey;
+  border-radius: 5px;
 }
 
 .living-example__key {
@@ -62,6 +66,7 @@
 }
 
 .living-example__price-text {
+  margin: 0 auto;
   font-family: Oswald, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;

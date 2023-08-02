@@ -37,13 +37,13 @@
 }
 
 .button__text {
-
   font-family: Oswald, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-align: center;
   color: $white;
+  text-transform: uppercase;
 
   &--second {
     color: $special-dark-grey;

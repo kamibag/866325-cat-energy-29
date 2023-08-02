@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   background: $white;
+  padding: 0 20px;
 }
 
 .programs__wrapper {
@@ -10,6 +11,7 @@
 }
 
 .programs__list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }

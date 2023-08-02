@@ -6,24 +6,17 @@
 }
 
 .catalog__wrapper {
-
-}
-
-.catalog__title {
-  font-family: Oswald, Arial, sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
-  text-align: left;
-  color: $black;
+  width: 100%;
 }
 
 .catalog__list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .catalog__item {
+  padding: 20px;
   border-top: 1px solid $special-grey-2;
 
   &:last-child {

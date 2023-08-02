@@ -16,6 +16,19 @@
   font-weight: 400;
   line-height: 18px;
   color: $special-dark-grey;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--radio {
+    color: $special-dark-grey-2;
+  }
+
+  &--checkbox {
+    color: $black;
+  }
+
 }
 
 .form__input-text {
@@ -25,6 +38,15 @@
   line-height: 18px;
   color: $special-dark-grey;
   border: 1px solid $grey-border-input;
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: $special-dark-grey;
+    outline: none;
+  }
 
   &::placeholder {
     font-family: Oswald, sans-serif;
@@ -50,6 +72,9 @@
 
 .form__input-radio {
 
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .form__area-owner-cat {
@@ -65,6 +90,8 @@
 }
 
 .form__textarea {
+  width: 100%;
+  box-sizing: border-box;
   resize: none;
   border: 1px solid $grey-border-input;
 
@@ -75,10 +102,6 @@
     line-height: 18px;
     color: $special-dark-grey;
   }
-}
-
-.form__bottom{
-
 }
 
 .form__button{
@@ -97,5 +120,3 @@
   text-align: center;
   color: $black;
 }
-
-

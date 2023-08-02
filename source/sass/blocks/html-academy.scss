@@ -4,6 +4,10 @@
 
 .html-academy__link {
   text-decoration: none;
+
+  &:active > .html-academy__text {
+    opacity: 0.3;
+  }
 }
 
 .html-academy__text {
