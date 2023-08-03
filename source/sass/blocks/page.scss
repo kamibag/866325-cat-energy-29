@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  margin: 0;
+  font-family: $primary-font-family;
+  color: $primary-text-color;
+  background: $primary-bg-color;
+}

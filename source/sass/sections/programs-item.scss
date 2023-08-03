@@ -1,0 +1,54 @@
+@use "../base/variables" as *;
+
+.programs-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background: $secondary-bg-color;
+}
+
+.programs-item__title {
+  margin: 0;
+  font-family: $primary-font-family;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: left;
+}
+
+.programs-item__description {
+  grid-column: span 2;
+  margin: 0;
+  padding: 10px 0;
+  font-family: $secondary-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: $secondary-text-color;
+  border-bottom: 1px solid $grey-light;
+}
+
+.programs-item__link {
+  grid-column: span 2;
+  display: inline-block;
+  margin: 15px 0 0;
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programs-item__link-text {
+  font-family: $primary-font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primary-text-color;
+}

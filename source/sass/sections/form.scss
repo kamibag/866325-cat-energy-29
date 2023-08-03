@@ -1,0 +1,143 @@
+@use "../base/variables" as *;
+
+.form {
+  display: grid;
+}
+
+.form__area-input {
+  border: 0;
+}
+
+.form__inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.form__label {
+  font-family: $primary-font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $secondary-text-color;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--radio {
+    color: $grey-dark;
+  }
+
+  &--checkbox {
+    color: $primary-text-color;
+  }
+}
+
+.form__input-text {
+  font-family: $primary-font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $secondary-text-color;
+  border: 1px solid $primary-border-input;
+
+  &:hover {
+    border-color: $color-line-block;
+  }
+
+  &:focus {
+    border-color: $secondary-text-color;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-family: $primary-font-family;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $secondary-text-color;
+  }
+
+  &--email {
+    border: 1px solid $color-line-block;
+  }
+
+  &--phone {
+    border: 1px solid $color-line-block;
+  }
+}
+
+.form__area-radio {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  border: 0;
+  border-top: 1px solid $grey-light;
+  border-bottom: 1px solid $grey-light;
+}
+
+.form__input-radio {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.form__area-owner-cat {
+  border: 0;
+  border-top: 2px solid $primary-color;
+}
+
+.form__title {
+  font-family: $primary-font-family;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.form__area-comment {
+  border: 0;
+  border-top: 2px solid $primary-color;
+}
+
+.form__textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid $primary-border-input;
+
+  &::placeholder {
+    font-family: $primary-font-family;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $secondary-text-color;
+  }
+}
+
+.form__area-additional {
+  border: 0;
+  border-top: 2px solid $primary-color;
+}
+
+.form__checkbox-area {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+}
+
+.form__button {
+  width: 100%;
+}
+
+.form__required {
+  text-align: center;
+}
+
+.form__required-text {
+  font-family: $secondary-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}

@@ -1,0 +1,53 @@
+@use "../base/variables" as *;
+
+.how-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.how-works__title {
+  margin: 10px 0 20px;
+  font-family: $primary-font-family;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.how-works__list {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.how-works__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.how-works__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: $primary-color;
+}
+
+.how-works__description {
+  margin: 0;
+  font-family: $secondary-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: $secondary-text-color;
+}

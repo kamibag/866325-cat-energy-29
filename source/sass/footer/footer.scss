@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: $secondary-bg-color;
+}
+
+.footer__wrapper {
+  display: grid;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__logo-text {
+  padding: 0 0 10px;
+  text-align: center;
+  border-bottom: 1px solid $grey-light;
+}
+
+.footer__logo-text-link {
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__social {
+  border-bottom: 1px solid $grey-light;
+}

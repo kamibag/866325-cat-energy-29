@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+@use "base/variables" as *;
+@use "base/fonts";
+@use "base/base";
+@use "blocks/page";
+@use "header/header";
+@use "header/nav";
+@use "blocks/main";
+@use "sections/top-section";
+@use "blocks/button";
+@use "sections/programs";
+@use "sections/programs-item";
+@use "sections/how-works";
+@use "sections/living-example";
+@use "sections/contacts";
+@use "footer/footer";
+@use "footer/social";
+@use "footer/html-academy";
+@use "sections/catalog";
+@use "sections/card-product";
+@use "sections/additional-goods";
+@use "sections/additional-item";
+@use "sections/prize-container";
+@use "sections/program-choice";
+@use "sections/form";
