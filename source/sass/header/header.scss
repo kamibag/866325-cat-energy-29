@@ -1,14 +1,18 @@
-.header {
+@use "../base/variables" as *;
 
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__item {
+  justify-self: center;
   padding: 10px;
-
 }
 
 .header__logo {
-
   &[href]:hover {
     opacity: 0.8;
   }
@@ -19,7 +23,6 @@
 }
 
 .header__logo-text {
-
   &[href]:hover {
     opacity: 0.8;
   }
@@ -33,4 +36,8 @@
   border: none;
   outline: none;
   background: transparent;
+}
+
+.header__nav {
+  grid-column: span 3;
 }

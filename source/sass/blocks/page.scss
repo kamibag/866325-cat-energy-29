@@ -1,12 +1,12 @@
+@use "../base/variables" as *;
+
 .page {
   height: 100%;
-  box-sizing: border-box;
 }
 
 .page__body {
   margin: 0;
-}
-
-.visually-hidden {
-  display: none;
+  font-family: $primary-font-family;
+  color: $primary-text-color;
+  background: $primary-bg-color;
 }

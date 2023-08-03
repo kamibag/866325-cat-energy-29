@@ -1,24 +1,22 @@
+@use "../base/variables" as *;
+
 .prize-container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   padding: 30px 20px;
-  background-image: linear-gradient(to top, rgba($basic-green, 0.85), rgba($basic-green, 0.85)), url("../img/gift-mobile.jpg");
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/content/gift-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.prize-container__image {
-
-}
-
 .prize-container__text {
-  font-family: Lato, Arial, sans-serif;
+  font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
-  color: $white;
+  color: $secondary-color;
 }

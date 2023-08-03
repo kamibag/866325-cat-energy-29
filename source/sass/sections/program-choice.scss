@@ -1,23 +1,19 @@
+@use "../base/variables" as *;
+
 .program-choice {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  background: $white;
 }
 
 .program-choice__wrapper {
-
+  width: 100%;
 }
 
 .program-choice__text {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $primary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  color: $black;
-}
-
-.program-choice__form {
-
 }

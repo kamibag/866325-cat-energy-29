@@ -1,0 +1,15 @@
+@use "../base/variables" as *;
+
+.social {
+  padding: 10px 0;
+}
+
+.social__list {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}

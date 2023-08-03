@@ -1,8 +1,9 @@
+@use "../base/variables" as *;
+
 .catalog {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $white;
 }
 
 .catalog__wrapper {
@@ -10,6 +11,8 @@
 }
 
 .catalog__list {
+  display: grid;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -17,9 +20,9 @@
 
 .catalog__item {
   padding: 20px;
-  border-top: 1px solid $special-grey-2;
+  border-top: 1px solid $grey-lighter;
 
   &:last-child {
-    border-bottom: 1px solid $special-grey-2;
+    border-bottom: 1px solid $grey-lighter;
   }
 }

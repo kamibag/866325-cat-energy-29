@@ -1,40 +1,39 @@
+@use "../base/variables" as *;
+
 .programs-item {
-
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   padding: 20px;
-  background: $basic-grey;
-
-  &:not(:last-child) {
-    margin: 0 0 20px 0;
-  }
-}
-
-.programs-item__image {
-
+  background: $secondary-bg-color;
 }
 
 .programs-item__title {
   margin: 0;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $primary-font-family;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
   text-align: left;
-  color: $black;
 }
 
 .programs-item__description {
+  grid-column: span 2;
   margin: 0;
   padding: 10px 0;
-  font-family: Lato, Arial, sans-serif;
+  font-family: $secondary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  color: $special-dark-grey;;
-  border-bottom: 1px solid $grey-line;
+  color: $secondary-text-color;
+  border-bottom: 1px solid $grey-light;
 }
 
 .programs-item__link {
+  grid-column: span 2;
   display: inline-block;
   margin: 15px 0 0;
   text-decoration: none;
@@ -45,16 +44,11 @@
 }
 
 .programs-item__link-text {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $primary-font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: $black;
-
-}
-
-.programs-item__link-image {
-
+  color: $primary-text-color;
 }

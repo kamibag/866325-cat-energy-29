@@ -1,21 +1,26 @@
+@use "../base/variables" as *;
+
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: $grey-background-2;
+  background: $secondary-bg-color;
 }
 
 .footer__wrapper {
-width: 100%;
+  display: grid;
+  align-items: center;
+  width: 100%;
 }
 
 .footer__logo-text {
-  border-bottom: 1px solid $grey-line;
+  padding: 0 0 10px;
+  text-align: center;
+  border-bottom: 1px solid $grey-light;
 }
 
 .footer__logo-text-link {
-
   &[href]:hover {
     opacity: 0.8;
   }
@@ -25,14 +30,6 @@ width: 100%;
   }
 }
 
-.footer__logo-text-image {
-
-}
-
 .footer__social {
-  border-bottom: 1px solid $grey-line;
-}
-
-.footer__html-academy {
-
+  border-bottom: 1px solid $grey-light;
 }

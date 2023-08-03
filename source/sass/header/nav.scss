@@ -1,6 +1,4 @@
-.nav {
-
-}
+@use "../base/variables" as *;
 
 .nav__list {
   list-style: none;
@@ -9,11 +7,10 @@
 }
 
 .nav__item {
-
-  border-top: 1px solid $nav-border;
+  border-top: 1px solid $color-line-nav;
 
   &:last-child {
-    border-bottom: 1px solid $nav-border;
+    border-bottom: 1px solid $color-line-nav;
   }
 }
 
@@ -22,14 +19,14 @@
   justify-content: start;
   align-items: center;
   width: 100%;
-  box-sizing: border-box;
   padding: 5px 10px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $primary-font-family;
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
   text-decoration: none;
-  color: $black;
+  text-transform: uppercase;
+  color: $primary-text-color;
 
   &:hover {
     opacity: 0.6;
@@ -42,7 +39,8 @@
 
 .nav__link-text {
   padding: 5px 0;
+
   &--current {
-    border-bottom: 2px solid $basic-green;
+    border-bottom: 2px solid $primary-color;
   }
 }

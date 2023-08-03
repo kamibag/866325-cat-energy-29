@@ -1,35 +1,31 @@
+@use "../base/variables" as *;
+
 .additional-item {
   padding: 20px 0;
 }
 
 .additional-item__title {
   margin: 0 0 10px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $primary-font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  color: $special-dark-grey-2;
+  color: $grey-dark;
   text-transform: uppercase;
 }
 
 .additional-item__characteristics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 10px 0;
-  font-family: Lato, Arial, sans-serif;
+  font-family: $secondary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  color: $special-dark-grey;
-
-}
-
-.additional-item__key {
-
+  color: $secondary-text-color;
 }
 
 .additional-item__value {
+  justify-self: end;
   margin: 0;
-}
-
-.additional-item__button {
-
 }
