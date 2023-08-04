@@ -5,7 +5,18 @@
   justify-content: center;
   align-items: center;
   background: $special-bg-color;
-  padding: 20px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    background-color: transparent;
+    background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 250px, transparent 250px);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 400px, transparent 400px);
+  }
 }
 
 .living-example__wrapper {
@@ -15,14 +26,25 @@
 }
 
 .living-example__title {
+  grid-column: span 2;
   margin: 10px 0 20px;
   font-family: $primary-font-family;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
 
 .living-example__description {
+  grid-column: span 2;
   font-family: $secondary-font-family;
   font-size: 14px;
   font-weight: 400;
@@ -37,6 +59,15 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media (min-width: $tablet-min-width) {
+    grid-column: 1;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: 1;
+    grid-row: 3;
+  }
 }
 
 .living-example__item {
@@ -53,6 +84,11 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .living-example__value {
@@ -63,6 +99,15 @@
   line-height: 12px;
   text-align: center;
   color: $secondary-text-color;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 14px;
+    background: $secondary-color;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    background: $special-bg-color;
+  }
 }
 
 .living-example__price {
@@ -71,6 +116,21 @@
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-min-width) {
+    justify-self: end;
+    grid-column: 2;
+    grid-template-columns: 1fr;
+    justify-content: end;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 4;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
 }
 
 .living-example__price-text {
@@ -81,11 +141,29 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    justify-self: end;
+  }
 }
 
 .living-example__compare-slider {
+  grid-column: span 2;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: 2;
+    grid-row: span 4;
+  }
+}
+
+.living-example__image {
+  @media (min-width: $tablet-min-width) {
+    width: 560px;
+    height: 512px;
+  }
 }

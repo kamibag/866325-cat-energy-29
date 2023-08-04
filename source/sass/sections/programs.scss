@@ -5,6 +5,14 @@
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding: 0 110px;
+  }
 }
 
 .programs__list {
@@ -14,4 +22,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
 }

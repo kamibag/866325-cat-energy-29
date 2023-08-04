@@ -1,16 +1,35 @@
 @use "../base/variables" as *;
 
+.nav__wrapper {
+  width: 100%;
+}
+
+
 .nav__list {
+  display: flex;
+  flex-flow: column nowrap;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-min-width) {
+    flex-flow: row nowrap;
+  }
 }
 
 .nav__item {
   border-top: 1px solid $color-line-nav;
 
+  @media (min-width: $tablet-min-width) {
+    border: 0;
+  }
+
   &:last-child {
     border-bottom: 1px solid $color-line-nav;
+
+    @media (min-width: $tablet-min-width) {
+      border: 0;
+    }
   }
 }
 
@@ -28,6 +47,15 @@
   text-transform: uppercase;
   color: $primary-text-color;
 
+  @media (min-width: $tablet-min-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    font-size: 18px;
+    color: $secondary-color;
+  }
+
   &:hover {
     opacity: 0.6;
   }
@@ -42,5 +70,9 @@
 
   &--current {
     border-bottom: 2px solid $primary-color;
+
+    @media (min-width: $desktop-min-width) {
+      border-color: $secondary-color;
+    }
   }
 }

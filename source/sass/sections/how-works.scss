@@ -5,6 +5,14 @@
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding: 0 110px;
+  }
 }
 
 .how-works__title {
@@ -13,6 +21,10 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+  }
 }
 
 .how-works__list {
@@ -23,6 +35,18 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-min-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 70px 170px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .how-works__item {
@@ -31,6 +55,47 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: 1fr;
+    padding: 0 0 50px;
+  }
+
+  &--first {
+    @media (min-width: $tablet-min-width) {
+      background-image: url("../img/icons/number_first.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+    }
+  }
+
+  &--second {
+    @media (min-width: $tablet-min-width) {
+      background-image: url("../img/icons/number_second.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+    }
+  }
+
+  &--third {
+    @media (min-width: $tablet-min-width) {
+      background-image: url("../img/icons/number_third.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+    }
+  }
+
+  &--fourth {
+    @media (min-width: $tablet-min-width) {
+      background-image: url("../img/icons/number_fourth.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+    }
+  }
 }
 
 .how-works__picture {
@@ -40,6 +105,11 @@
   width: 60px;
   height: 60px;
   background: $primary-color;
+
+  @media (min-width: $tablet-min-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .how-works__description {

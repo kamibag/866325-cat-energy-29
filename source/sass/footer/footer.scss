@@ -12,12 +12,21 @@
   display: grid;
   align-items: center;
   width: 100%;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .footer__logo-text {
   padding: 0 0 10px;
   text-align: center;
   border-bottom: 1px solid $grey-light;
+
+  @media (min-width: $tablet-min-width) {
+    border: 0;
+    justify-self: start;
+  }
 }
 
 .footer__logo-text-link {
@@ -32,4 +41,14 @@
 
 .footer__social {
   border-bottom: 1px solid $grey-light;
+
+  @media (min-width: $tablet-min-width) {
+    border: 0;
+  }
+}
+
+.footer__html-academy {
+  @media (min-width: $tablet-min-width) {
+    justify-self: end;
+  }
 }

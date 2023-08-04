@@ -10,37 +10,43 @@
 <header class="header">
   <div class="header__item">
     <a class="header__logo">
-      <img src="img/icons/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
+      <picture>
+        <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
+        <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
+        <img class="header__logo-image" src="img/icons/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
+      </picture>
     </a>
   </div>
-  <div class="header__item">
+  <div class="header__item header__item--logo-text">
     <a class="header__logo-text">
-      <img src="img/icons/text-logo.svg" width="101" height="18" alt="Кэт энерджи">
+      <img class="header__logo-text-image" src="img/icons/text-logo.svg" width="101" height="18" alt="Кэт энерджи">
     </a>
   </div>
-  <div class="header__item">
+  <div class="header__item header__item--button">
     <button class="header__button" type="button" aria-label="Открыть меню">
       <img src="img/icons/burger-menu.svg" width="24" height="24" alt="Открыть меню">
     </button>
   </div>
   <nav class="header__nav nav">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a class="nav__link" href="index.html">
-          <span class="nav__link-text nav__link-text--current">Главная</span>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="catalog.html">
-          <span class="nav__link-text">Каталог продукции</span>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="form.html">
-          <span class="nav__link-text">Подбор программы</span>
-        </a>
-      </li>
-    </ul>
+    <div class="nav__wrapper">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">
+            <span class="nav__link-text nav__link-text--current">Главная</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">
+            <span class="nav__link-text">Каталог продукции</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">
+            <span class="nav__link-text">Подбор программы</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
 <main class="main">
@@ -49,6 +55,8 @@
       <h1 class="top-section__title">Функциональное питание для котов</h1>
       <p class="top-section__subtitle">Занялся собой? Займись котом!</p>
       <picture class="top-section__image-wrapper">
+        <source srcset="img/content/index-cat-desktop.png" media="(min-width: 1440px)">
+        <source srcset="img/content/index-cat-tablet.png" media="(min-width: 768px)" >
         <img class="top-section__image" src="img/content/index-cat-mobile.png" alt="Еда" width="280" height="270">
       </picture>
       <a class="top-section__link button" href="form.html">Подобрать программу</a>
@@ -62,21 +70,21 @@
     <h2 class="visually-hidden">Каталог программ</h2>
     <ul class="programs__list">
       <li class="programs__item programs-item">
-        <img class="programs-item__image" src="img/icons/cat-back.svg" alt="Символ кота" width="50" height="53">
+        <img class="programs-item__icon programs-item__icon--slim" src="img/icons/cat-back.svg" alt="Символ кота" width="50" height="53">
         <h3 class="programs-item__title">Похудение</h3>
         <p class="programs-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="programs-item__link" href="catalog.html">
           <span class="programs-item__link-text">Каталог Slim</span>
-          <img class="programs-item__link-image" src="img/icons/icon-arrow.svg" alt="Стрелка вправо" width="24" height="12">
+          <img class="programs-item__link-icon" src="img/icons/icon-arrow.svg" alt="Стрелка вправо" width="24" height="12">
         </a>
       </li>
       <li class="programs__item programs-item">
-        <img class="programs-item__image" src="img/icons/cat-back2.svg" alt="Символ кота" width="67" height="50">
+        <img class="programs-item__icon programs-item__icon--pro" src="img/icons/cat-back2.svg" alt="Символ кота" width="67" height="50">
         <h3 class="programs-item__title">Набор массы</h3>
         <p class="programs-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="programs-item__link" href="catalog.html">
           <span class="programs-item__link-text">Каталог Pro</span>
-          <img class="programs-item__link-image" src="img/icons/icon-arrow.svg" alt="Стрелка вправо" width="24" height="12">
+          <img class="programs-item__link-icon" src="img/icons/icon-arrow.svg" alt="Стрелка вправо" width="24" height="12">
         </a>
       </li>
     </ul>
@@ -85,25 +93,25 @@
     <div class="how-works__wrapper">
       <h2 class="how-works__title">Как это работает</h2>
       <ul class="how-works__list">
-        <li class="how-works__item">
+        <li class="how-works__item how-works__item--first">
           <div class="how-works__picture">
             <img class="how-works__icon" src="img/icons/icon-leaf.svg" alt="Лист" width="30" height="32">
           </div>
           <p class="how-works__description">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
-        <li class="how-works__item">
+        <li class="how-works__item how-works__item--second">
           <div class="how-works__picture">
             <img class="how-works__icon" src="img/icons/icon-powder.svg" alt="Порошок" width="30" height="32">
           </div>
           <p class="how-works__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
-        <li class="how-works__item">
+        <li class="how-works__item how-works__item--third">
           <div class="how-works__picture">
             <img class="how-works__icon" src="img/icons/icon-eat.svg" alt="Еда" width="30" height="32">
           </div>
           <p class="how-works__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
-        <li class="how-works__item">
+        <li class="how-works__item how-works__item--fourth">
           <div class="how-works__picture">
             <img class="how-works__icon" src="img/icons/icon-clock.svg" alt="Часы" width="30" height="32">
           </div>
@@ -132,10 +140,12 @@
       </dl>
       <div class="living-example__compare-slider">
         <picture>
-          <img src="img/content/thick-cat.png" width="280" height="256" alt="Кот до">
+          <source srcset="img/content/thick-cat-tablet.png" media="(min-width: 768px)">
+          <img class="living-example__image" src="img/content/thick-cat-mobile.png" width="280" height="256" alt="Кот до">
         </picture>
         <picture>
-          <img src="img/content/thin-cat.png" width="280" height="256" alt="Кот после">
+          <source srcset="img/content/thin-cat-tablet.png" media="(min-width: 768px)">
+          <img class="living-example__image" src="img/content/thin-cat-mobile.png" width="280" height="256" alt="Кот после">
         </picture>
       </div>
     </div>
@@ -145,12 +155,14 @@
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contacts__address">
         <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <div class="contacts__text">
-          <p>ул. Большая Конюшенная, д. 19/8</p>
-          <p>Санкт-Петербург</p>
+        <div class="contacts__text-wrapper">
+          <p class="location__text">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="location__text">Санкт-Петербург</p>
         </div>
       </div>
       <picture class="contacts__map-wrapper">
+        <source srcset="img/content/location-desktop.png" media="(min-width: 1440px)">
+        <source srcset="img/content/location-tablet.png" media="(min-width: 768px)">
         <img class="contacts__map" src="img/content/location-mobile.png" width="320" height="362" alt="Карта">
       </picture>
     </div>

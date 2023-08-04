@@ -17,6 +17,12 @@
   border: none;
   outline: none;
 
+  @media (min-width: $tablet-min-width) {
+    padding: 14px 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   &:hover {
     background: $green-light;
     cursor: pointer;
