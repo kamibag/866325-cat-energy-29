@@ -2,52 +2,39 @@
 
 .header {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  justify-content: center;
+  grid-template-columns: 1fr;
   align-items: center;
+  padding: 13px 0 0;
 
   @media (min-width: $tablet-min-width) {
-    padding: 25px 30px 0;
+    grid-template-columns: auto 1fr;
+    margin: 0 0 65px;
+    padding: 25px 33px 0 30px;
   }
 
   @media (min-width: $desktop-min-width) {
+    margin: 0 0 110px;
     padding: 40px 110px 0;
-  }
-
-  &--button {
-    @media (min-width: $tablet-min-width) {
-      display: none;
-    }
   }
 }
 
-.header__item {
-  justify-self: center;
-  padding: 10px;
+.header__logo-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 10px;
 
-  &--button {
-    @media (min-width: $tablet-min-width) {
-      display: none;
-    }
-  }
-
-  &--logo-text {
+  @media (min-width: $tablet-min-width) {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @media (min-width: $tablet-min-width) {
-      justify-self: start;
-    }
-
-    @media (min-width: $desktop-min-width) {
-      width: 118px;
-      height: 21px;
-    }
+    gap: 13px;
+    padding: 0;
   }
 }
 
-.header__logo {
+.header__logo-main {
   &[href]:hover {
     opacity: 0.8;
   }
@@ -57,7 +44,7 @@
   }
 }
 
-.header__logo-image {
+.header__logo-main-image {
   @media (min-width: $tablet-min-width) {
     width: 60px;
     height: 50px;
@@ -66,6 +53,12 @@
   @media (min-width: $desktop-min-width) {
     width: 70px;
     height: 59px;
+  }
+}
+
+.header__logo-item {
+  &--secondary {
+    justify-self: center;
   }
 }
 
@@ -79,7 +72,15 @@
   }
 }
 
+.header__button-wrapper {
+  justify-self: end;
+  @media (min-width: $tablet-min-width) {
+    display: none;
+  }
+}
+
 .header__button {
+  padding: 0;
   border: none;
   outline: none;
   background: transparent;
@@ -90,9 +91,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 
   @media (min-width: $tablet-min-width) {
-    grid-column: span 1;
+    justify-self: end;
+    grid-column: 2;
+    grid-row: 1;
   }
 }

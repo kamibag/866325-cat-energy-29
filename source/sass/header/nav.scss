@@ -1,9 +1,7 @@
 @use "../base/variables" as *;
-
 .nav__wrapper {
   width: 100%;
 }
-
 
 .nav__list {
   display: flex;
@@ -14,7 +12,19 @@
 
   @media (min-width: $tablet-min-width) {
     flex-flow: row nowrap;
+    gap: 33px;
   }
+
+  @media (min-width: $desktop-min-width) {
+    &--inverted .nav__link-text {
+      color: $secondary-color;
+    }
+
+    &--inverted .nav__link-text--current {
+      border-color: $secondary-color;
+    }
+  }
+
 }
 
 .nav__item {
@@ -35,10 +45,10 @@
 
 .nav__link {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 5px 10px;
+  padding: 22px 20px 24px;
   font-family: $primary-font-family;
   font-size: 20px;
   font-weight: 400;
@@ -48,12 +58,13 @@
   color: $primary-text-color;
 
   @media (min-width: $tablet-min-width) {
+    padding: 0;
     font-size: 18px;
   }
 
   @media (min-width: $desktop-min-width) {
     font-size: 18px;
-    color: $secondary-color;
+
   }
 
   &:hover {
@@ -66,13 +77,10 @@
 }
 
 .nav__link-text {
-  padding: 5px 0;
+  padding: 0 0 5px;
+  margin: 0 0 -5px;
 
   &--current {
     border-bottom: 2px solid $primary-color;
-
-    @media (min-width: $desktop-min-width) {
-      border-color: $secondary-color;
-    }
   }
 }

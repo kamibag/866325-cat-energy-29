@@ -13,14 +13,34 @@
 .main__top-section {
   position: relative;
   margin: 0 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 0;
+  }
 }
 
 .main__programs {
   margin: 0 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 0 0 45px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 0 0 71px;
+  }
 }
 
 .main__how-works {
-  margin: 0 0 20px;
+  margin: 0 0 49px;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 0 0 72px;
+  }
 }
 
 .main__additional-goods {

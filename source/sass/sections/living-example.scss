@@ -5,17 +5,19 @@
   justify-content: center;
   align-items: center;
   background: $special-bg-color;
-  padding: 0 20px;
+  padding: 25px 20px 40px;
 
   @media (min-width: $tablet-min-width) {
+    padding: 45px 31px 101px;
     background-color: transparent;
-    background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 250px, transparent 250px);
+    background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 462px, transparent 4620px);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   @media (min-width: $desktop-min-width) {
-    background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 400px, transparent 400px);
+    padding: 0 110px;
+    background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 462px, transparent 462px);
   }
 }
 
@@ -23,58 +25,67 @@
   display: grid;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .living-example__title {
-  grid-column: span 2;
-  margin: 10px 0 20px;
-  font-family: $primary-font-family;
-  font-size: 36px;
-  font-weight: 400;
+  margin: 0 0 40px;
   line-height: 40px;
 
-  @media (min-width: 768px) {
-    font-size: 60px;
+  @media (min-width: $tablet-min-width) {
+    grid-column: span 2;
+    margin: 0 0 60px;
   }
 
   @media (min-width: $desktop-min-width) {
     grid-column: 1;
     grid-row: 1;
+    margin: 0 0 146px;
   }
 }
 
 .living-example__description {
-  grid-column: span 2;
-  font-family: $secondary-font-family;
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0 0 20px;
   line-height: 18px;
-  text-align: left;
   color: $secondary-text-color;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 0 0 55px;
+    grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 0 0 69px;
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
 
 .living-example__content {
+  margin: 0 0 34px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
 
   @media (min-width: $tablet-min-width) {
-    grid-column: 1;
+    margin: 0;
   }
 
   @media (min-width: $desktop-min-width) {
+    margin: 0 0 60px;
     grid-column: 1;
     grid-row: 3;
   }
 }
 
 .living-example__item {
-  margin: 10px 0;
-  padding: 5px 10px;
-  border: 1px solid $color-line-block;
-  border-radius: 5px;
+  position: relative;
+  text-align: center;
 }
 
 .living-example__key {
@@ -84,6 +95,9 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+  padding: 14px 0 17px;
+  border: 1px solid $color-line-block;
+  border-radius: 3px;
 
   @media (min-width: $tablet-min-width) {
     font-size: 30px;
@@ -92,13 +106,19 @@
 }
 
 .living-example__value {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
   margin: 0;
+  padding: 0 15px;
   font-family: $secondary-font-family;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
   text-align: center;
   color: $secondary-text-color;
+  background: $special-bg-color;
 
   @media (min-width: $tablet-min-width) {
     font-size: 14px;
@@ -111,6 +131,7 @@
 }
 
 .living-example__price {
+  margin: 0 0 20px;
   justify-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -118,8 +139,8 @@
   align-items: center;
 
   @media (min-width: $tablet-min-width) {
+    margin: 0;
     justify-self: end;
-    grid-column: 2;
     grid-template-columns: 1fr;
     justify-content: end;
   }
@@ -128,13 +149,15 @@
     justify-self: center;
     grid-column: 1;
     grid-row: 4;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 63px;
   }
 }
 
 .living-example__price-text {
-  margin: 0 auto;
+  margin: 0;
   font-family: $primary-font-family;
   font-size: 14px;
   font-weight: 400;
@@ -149,13 +172,18 @@
 }
 
 .living-example__compare-slider {
-  grid-column: span 2;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 
+  @media (min-width: $tablet-min-width) {
+    margin: 104px 0 0;
+    grid-column: span 2;
+  }
+
   @media (min-width: $desktop-min-width) {
+    margin: 0;
     grid-column: 2;
     grid-row: span 4;
   }

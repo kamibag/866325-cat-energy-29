@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 27px 20px 0;
 
   @media (min-width: $tablet-min-width) {
     padding: 0 120px;
@@ -25,7 +25,7 @@
   @media (min-width: $tablet-min-width) {
     position: relative;
     align-items: start;
-    padding: 0 0 600px;
+    padding: 0 0 526px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -37,17 +37,14 @@
 }
 
 .top-section__title {
-  margin: 20px 0;
-  font-family: $primary-font-family;
-  font-size: 36px;
-  font-weight: 400;
+  margin: 0 0 25px;
   line-height: 1;
   text-align: center;
   color: $secondary-color;
 
   @media (min-width: $tablet-min-width) {
+    margin: 0 0 40px;
     text-align: left;
-    font-size: 60px;
     color: $primary-text-color;
   }
 
@@ -58,7 +55,7 @@
 }
 
 .top-section__subtitle {
-  margin: 10px 0;
+  margin: 0 0 29px;
   font-family: $primary-font-family;
   font-size: 14px;
   font-weight: 400;
@@ -68,8 +65,9 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-min-width) {
+    margin: 0 0 50px;
     text-align: left;
-    font-size: 36px;
+    font-size: 20px;
     color: $primary-text-color;
   }
 
@@ -81,8 +79,10 @@
 
 .top-section__image-wrapper {
   align-self: center;
+  margin: 0 0 3px;
 
   @media (min-width: $tablet-min-width) {
+    margin: 0;
     position: absolute;
     z-index: -1;
     bottom: 0;
@@ -96,6 +96,7 @@
 }
 
 .top-section__image {
+  display: block;
   @media (min-width: $tablet-min-width) {
     width: 709px;
     height: 609px;
