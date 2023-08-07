@@ -52,7 +52,14 @@
   }
 }
 
+.card-product__container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
 .card-product__title {
+  align-self: center;
   margin: 10px 0;
   max-width: 76px;
   font-family: $primary-font-family;

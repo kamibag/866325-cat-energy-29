@@ -3,8 +3,7 @@
 .field-text {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 10px;
-  padding: 5px 0;
+  gap: 13px;
 }
 
 .field-text__input-wrapper {
@@ -14,11 +13,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 16px;
+      right: 14px;
       width: 20px;
-      height: 28px;
-      margin: 0 5px 0 0;
+      height: 20px;
       display: block;
       background-image: url("../img/icons/email-stroke.svg");
       background-repeat: no-repeat;
@@ -31,11 +29,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 16px;
+      right: 14px;
       width: 20px;
-      height: 28px;
-      margin: 0 5px 0 0;
+      height: 20px;
       background-image: url("../img/icons/phone-stroke.svg");
       background-repeat: no-repeat;
       background-size: 20px 20px;
@@ -46,12 +43,19 @@
 
 .field-text__input {
   width: 100%;
+  padding: 14px 15px 13px;
   font-family: $primary-font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: $secondary-text-color;
   border: 1px solid $primary-border-input;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: normal;
+  }
 
   &:hover {
     border-color: $color-line-block;
@@ -62,12 +66,22 @@
     outline: none;
   }
 
+  &:invalid {
+    border-color: $status-error;
+  }
+
   &::placeholder {
     font-family: $primary-font-family;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
+    text-transform: uppercase;
     color: $secondary-text-color;
+
+    @media (min-width: $tablet-min-width) {
+      font-size: 20px;
+      line-height: normal;
+    }
   }
 
   &--email,
@@ -87,4 +101,10 @@
   font-weight: 400;
   line-height: 18px;
   color: $secondary-text-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }

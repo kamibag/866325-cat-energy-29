@@ -17,6 +17,8 @@
   font-weight: 400;
   line-height: 18px;
   color: $primary-text-color;
+  user-select: none;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-min-width) {
     padding: 26px 0 26px 60px;
@@ -24,8 +26,8 @@
     line-height: 20px;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:hover {
+    cursor: pointer;
   }
 
   &::before {
@@ -59,9 +61,13 @@
 }
 
 .field-checkbox__input:not(:disabled) ~ .field-checkbox__label:hover::before {
-  border-color: $color-line-block;
+  border-color: $grey-medium;
 }
 
 .field-checkbox__input:disabled ~ .field-checkbox__label {
   opacity: 0.3;
+}
+
+.field-checkbox__input:disabled ~ .field-checkbox__label:hover {
+  cursor: default;
 }

@@ -12,6 +12,8 @@
   background-color: $primary-bg-color;
 
   @media (min-width: $tablet-min-width) {
+    margin-left: -20px;
+    padding: 0 20px 0;
     font-size: 36px;
   }
 
@@ -32,7 +34,7 @@
     }
 
     @media (min-width: $desktop-min-width) {
-      width: calc(100vw - 40px);
+      width: calc(100vw - 110px);
     }
   }
 
@@ -51,5 +53,18 @@
 
   &::after {
     left: 0;
+  }
+
+  &--form {
+    &::before,
+    &::after {
+      @media (min-width: $tablet-min-width) {
+        width: calc(100vw - 70px);
+      }
+
+      @media (min-width: $desktop-min-width) {
+        width: calc(100vw - 110px);
+      }
+    }
   }
 }

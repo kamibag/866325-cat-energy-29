@@ -11,7 +11,20 @@
   }
 
   @media (min-width: $desktop-min-width) {
+    margin: 74px 0 84px;
     padding: 0 110px;
+  }
+
+  &--form {
+    @media (min-width: $tablet-min-width) {
+      margin: 65px 0 54px;
+      padding: 0 70px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      margin: 74px 0 55px;
+      padding: 0 110px;
+    }
   }
 }
 
@@ -76,4 +89,12 @@
 
 .main__program-choice {
   margin: 0 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 0 0 60px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 0 0 80px;
+  }
 }
