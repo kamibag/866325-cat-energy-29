@@ -5,11 +5,22 @@
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  padding: 20px 20px 25px;
+  border-top: 1px solid $grey-lighter;
 
   @media (min-width: $tablet-min-width) {
+
     align-self: stretch;
-    grid-template-columns: 1fr;
-    background: $secondary-bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 37px 40px;
+    background-image: linear-gradient(to top, $secondary-bg-color 430px, transparent 430px);
+    border: 0;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $grey-lighter;
   }
 
   &--more {
@@ -18,8 +29,14 @@
     flex-flow: column nowrap;
 
     @media (min-width: $tablet-min-width) {
+      height: 430px;
+      align-self: end;
       background: $primary-bg-color;
       border: 1px solid $secondary-bg-color;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      max-width: 430px;
     }
   }
 }
@@ -28,15 +45,28 @@
   justify-self: center;
 }
 
+.card-product__image {
+  @media (min-width: $tablet-min-width) {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .card-product__title {
   margin: 10px 0;
+  max-width: 76px;
   font-family: $primary-font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: $grey-dark;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-min-width) {
+    margin: 40px 0 20px;
+    max-width: 135px;
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
   }
 }
@@ -50,6 +80,11 @@
   font-weight: 400;
   line-height: 16px;
   color: $secondary-text-color;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .card-product__row {
@@ -76,7 +111,14 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+  text-align: center;
   color: $secondary-text-color;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 0 0 82px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .card-product__button {
@@ -84,6 +126,6 @@
   width: 100%;
 
   @media (min-width: $tablet-min-width) {
-    grid-column: 1;
+    margin: 32px 0 0;
   }
 }

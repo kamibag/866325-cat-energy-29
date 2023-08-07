@@ -1,21 +1,19 @@
 @use "variables" as *;
 
-.title {
-  font-family: $primary-font-family;
-  font-size: 36px;
-  font-weight: 400;
-  font-style: normal;
-
-  @media (min-width: $tablet-min-width) {
-    font-size: 60px;
-  }
-}
-
-.title-line {
+.subtitle {
   position: relative;
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 20px 0 0;
+  text-align: left;
+  font-family: $primary-font-family;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
   background-color: $primary-bg-color;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 36px;
+  }
 
   &::before,
   &::after {
@@ -23,11 +21,23 @@
     position: absolute;
     display: block;
     top: 0;
-    width: 100vw;
+    width: calc(100vw - 20px);
     height: 3px;
     margin-top: calc(1em / 2 + 3px);
     background-color: $primary-color;
     z-index: -1;
+
+    @media (min-width: $tablet-min-width) {
+      width: calc(100vw - 30px);
+    }
+
+    @media (min-width: $desktop-min-width) {
+      width: calc(100vw - 40px);
+    }
+  }
+
+  &::before {
+    display: none;
 
     @media (min-width: $tablet-min-width) {
       display: block;
@@ -41,16 +51,5 @@
 
   &::after {
     left: 0;
-  }
-}
-
-.text {
-  font-family: $secondary-font-family;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-
-  @media (min-width: $tablet-min-width) {
-    font-size: 16px;
   }
 }

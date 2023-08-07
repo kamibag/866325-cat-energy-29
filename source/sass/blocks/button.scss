@@ -6,8 +6,8 @@
   align-items: center;
   padding: 10px 20px;
   font-family: $primary-font-family;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 18px;
   text-align: center;
   color: $secondary-color;
@@ -39,6 +39,17 @@
     &:hover {
       background: $grey-lighter;
       color: rgba($secondary-text-color, 0.3);
+    }
+  }
+
+  &--card {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-min-width) {
+      padding: 10px 20px;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 }

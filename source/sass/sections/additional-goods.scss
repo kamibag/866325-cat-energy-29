@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-min-width) {
-    padding: 0 40px;
+    padding: 0 110px;
   }
 }
 
@@ -22,19 +22,17 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
-    gap: 0 20px;
+    gap: 0 81px;
   }
 }
 
 .additional-goods__title {
-  text-align: left;
-  font-family: $primary-font-family;
-  font-size: 24px;
-  font-weight: 400;
+  margin: 25px 0 36px;
   line-height: 24px;
 
-
   @media (min-width: $tablet-min-width) {
+    margin: 0 0 80px;
+    line-height: 36px;
     grid-column: span 2;
   }
 }
@@ -42,14 +40,15 @@
 .additional-goods__list {
   display: grid;
   align-items: stretch;
+  margin: 0 0 35px;
   padding: 0;
   list-style: none;
-}
 
-.additional-goods__item {
-  border-top: 1px solid $color-line-block;
+  @media (min-width: $tablet-min-width) {
+    margin: 0 0 70px;
+  }
 
-  &:last-child {
-    border-bottom: 1px solid $color-line-block;
+  @media (min-width: $desktop-min-width) {
+    margin: 0;
   }
 }

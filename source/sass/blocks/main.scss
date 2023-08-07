@@ -1,13 +1,18 @@
 @use "../base/variables" as *;
 
 .main__title {
-  margin: 20px 0;
+  margin: 27px 0 41px;
   padding: 0 20px;
-  font-family: $primary-font-family;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
   text-align: left;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 65px 0 84px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding: 0 110px;
+  }
 }
 
 .main__top-section {
@@ -47,8 +52,26 @@
   }
 }
 
+.main__catalog {
+  @media (min-width: $tablet-min-width) {
+    margin: 0 0 70px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 0 0 76px;
+  }
+}
+
 .main__additional-goods {
   margin: 0 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 0 0 75px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 0 0 87px;
+  }
 }
 
 .main__program-choice {
