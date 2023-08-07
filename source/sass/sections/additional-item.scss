@@ -2,6 +2,13 @@
 
 .additional-item {
   padding: 20px 0;
+  display: grid;
+  justify-content: stretch;
+  align-items: center;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: 1fr auto;
+  }
 }
 
 .additional-item__title {
@@ -12,6 +19,10 @@
   line-height: 16px;
   color: $grey-dark;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 0;
+  }
 }
 
 .additional-item__characteristics {
@@ -28,4 +39,20 @@
 .additional-item__value {
   justify-self: end;
   margin: 0;
+}
+
+.additional-item__button {
+  @media (min-width: $tablet-min-width) {
+    grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: 4;
+  }
+}
+
+.additional-goods__prize {
+  @media (min-width: $desktop-min-width) {
+    align-self: stretch;
+  }
 }

@@ -13,8 +13,8 @@
   }
 
   @media (min-width: $desktop-min-width) {
-    margin: 0 0 110px;
-    padding: 40px 110px 0;
+    margin: 0 0 74px;
+    padding: 56px 110px 0;
   }
 }
 
@@ -72,8 +72,16 @@
   }
 }
 
+.header__logo-text-image {
+  @media (min-width: $tablet-min-width) {
+    width: 119px;
+    height: 21px;
+  }
+}
+
 .header__button-wrapper {
   justify-self: end;
+
   @media (min-width: $tablet-min-width) {
     display: none;
   }

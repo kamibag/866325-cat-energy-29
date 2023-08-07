@@ -17,6 +17,10 @@
   @media (min-width: $tablet-min-width) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 0 0 50px;
+  }
 }
 
 .main__programs {

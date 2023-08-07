@@ -15,7 +15,7 @@
   align-items: center;
 
   @media (min-width: $tablet-min-width) {
-   gap: 23px;
+    gap: 23px;
   }
 
   &:active > .html-academy__text {
@@ -26,6 +26,4 @@
 .html-academy__text {
   line-height: 20px;
   color: $secondary-text-color;
-
-
 }

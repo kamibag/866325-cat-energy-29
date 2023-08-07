@@ -2,91 +2,53 @@
 
 .form {
   display: grid;
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: 1fr auto;
+  }
 }
 
 .form__area-input {
   border: 0;
 }
 
-.form__inner {
+.form__area-radio {
+  display: grid;
+  gap: 5px;
+  border: 0;
+  border-top: 1px solid $grey-light;
+  border-bottom: 1px solid $grey-light;
+
+  @media (min-width: $tablet-min-width) {
+    border: 1px solid $grey-light;
+  }
+}
+
+.form__field-input {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px;
   padding: 5px 0;
 }
 
-.form__label {
-  font-family: $primary-font-family;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  color: $secondary-text-color;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &--radio {
-    color: $grey-dark;
-  }
-
-  &--checkbox {
-    color: $primary-text-color;
-  }
-}
-
-.form__input-text {
-  font-family: $primary-font-family;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  color: $secondary-text-color;
-  border: 1px solid $primary-border-input;
-
-  &:hover {
-    border-color: $color-line-block;
-  }
-
-  &:focus {
-    border-color: $secondary-text-color;
-    outline: none;
-  }
-
-  &::placeholder {
-    font-family: $primary-font-family;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    color: $secondary-text-color;
-  }
-
-  &--email {
-    border: 1px solid $color-line-block;
-  }
-
-  &--phone {
-    border: 1px solid $color-line-block;
-  }
-}
-
-.form__area-radio {
+.form__field-radio {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 5px;
-  border: 0;
-  border-top: 1px solid $grey-light;
-  border-bottom: 1px solid $grey-light;
 }
 
-.form__input-radio {
-  &:hover {
-    cursor: pointer;
-  }
+.form__field-checkbox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
 }
 
 .form__area-owner-cat {
   border: 0;
-  border-top: 2px solid $primary-color;
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: span 2;
+  }
 }
 
 .form__title {
@@ -98,32 +60,43 @@
 
 .form__area-comment {
   border: 0;
-  border-top: 2px solid $primary-color;
-}
 
-.form__textarea {
-  width: 100%;
-  resize: none;
-  border: 1px solid $primary-border-input;
-
-  &::placeholder {
-    font-family: $primary-font-family;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    color: $secondary-text-color;
+  @media (min-width: $desktop-min-width) {
+    grid-column: span 2;
   }
 }
 
 .form__area-additional {
   border: 0;
-  border-top: 2px solid $primary-color;
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: span 2;
+  }
 }
 
-.form__checkbox-area {
+.form__area-checkbox {
   display: grid;
-  grid-template-columns: auto 1fr;
   gap: 5px;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.form__bottom {
+  @media (min-width: $tablet-min-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: span 2;
+  }
 }
 
 .form__button {
@@ -132,6 +105,11 @@
 
 .form__required {
   text-align: center;
+  align-self: center;
+
+  @media (min-width: $tablet-min-width) {
+    text-align: left;
+  }
 }
 
 .form__required-text {

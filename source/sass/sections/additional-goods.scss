@@ -1,22 +1,42 @@
 @use "../base/variables" as *;
 
 .additional-goods {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
   padding: 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding: 0 40px;
+  }
 }
 
 .additional-goods__wrapper {
   width: 100%;
+
+  @media (min-width: $desktop-min-width) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 0 20px;
+  }
 }
 
 .additional-goods__title {
+  text-align: left;
   font-family: $primary-font-family;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  text-align: center;
+
+
+  @media (min-width: $tablet-min-width) {
+    grid-column: span 2;
+  }
 }
 
 .additional-goods__list {

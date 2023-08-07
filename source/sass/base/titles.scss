@@ -1,4 +1,5 @@
 @use "variables" as *;
+
 .title {
   font-family: $primary-font-family;
   font-size: 36px;
@@ -7,6 +8,39 @@
 
   @media (min-width: $tablet-min-width) {
     font-size: 60px;
+  }
+}
+
+.title-line {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  background-color: $primary-bg-color;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100vw;
+    height: 3px;
+    margin-top: calc(1em / 2 + 3px);
+    background-color: $primary-color;
+    z-index: -1;
+
+    @media (min-width: $tablet-min-width) {
+      display: block;
+      right: 100%;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      margin-right: 37px;
+    }
+  }
+
+  &::after {
+    left: 0;
   }
 }
 
