@@ -37,7 +37,7 @@
 
 .additional-item__title {
   margin: 0 0 10px;
-  font-family: $primary-font-family;
+  font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
@@ -54,11 +54,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 10px 0;
-  font-family: $secondary-font-family;
+  font-family: $primary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  color: $secondary-text-color;
+  color: $primary-text-color;
 
   @media (min-width: $tablet-min-width) {
     grid-template-columns: repeat(2, auto);

@@ -50,7 +50,7 @@
 .living-example__description {
   margin: 0 0 20px;
   line-height: 18px;
-  color: $secondary-text-color;
+  color: $primary-text-color;
 
   @media (min-width: $tablet-min-width) {
     margin: 0 0 55px;
@@ -89,7 +89,7 @@
 }
 
 .living-example__key {
-  font-family: $primary-font-family;
+  font-family: $secondary-font-family;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -112,12 +112,12 @@
   display: inline-block;
   margin: 0;
   padding: 0 15px;
-  font-family: $secondary-font-family;
+  font-family: $primary-font-family;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
   text-align: center;
-  color: $secondary-text-color;
+  color: $primary-text-color;
   background: $special-bg-color;
 
   @media (min-width: $tablet-min-width) {
@@ -158,7 +158,7 @@
 
 .living-example__price-text {
   margin: 0;
-  font-family: $primary-font-family;
+  font-family: $secondary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;

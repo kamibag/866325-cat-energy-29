@@ -62,7 +62,7 @@
   align-self: center;
   margin: 10px 0;
   max-width: 76px;
-  font-family: $primary-font-family;
+  font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -82,11 +82,11 @@
   display: grid;
   grid-template-columns: 1fr;
   margin: 10px 0;
-  font-family: $secondary-font-family;
+  font-family: $primary-font-family;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  color: $secondary-text-color;
+  color: $primary-text-color;
 
   @media (min-width: $tablet-min-width) {
     font-size: 16px;
@@ -114,12 +114,12 @@
 }
 
 .card-product__description {
-  font-family: $secondary-font-family;
+  font-family: $primary-font-family;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   text-align: center;
-  color: $secondary-text-color;
+  color: $primary-text-color;
 
   @media (min-width: $tablet-min-width) {
     margin: 0 0 82px;

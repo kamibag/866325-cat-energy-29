@@ -26,6 +26,6 @@
 @use "sections/prize-container";
 @use "sections/program-choice";
 @use "sections/form";
-@use "sections/field-text";
-@use "sections/field-radio";
-@use "sections/field-checkbox";
+@use "blocks/field-text";
+@use "blocks/field-radio";
+@use "blocks/field-checkbox";

@@ -46,12 +46,12 @@
 
 .contacts__title {
   margin: 0;
-  font-family: $primary-font-family;
+  font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: left;
   text-transform: uppercase;
+  color: $grey-darker;
 
   @media (min-width: $tablet-min-width) {
     width: 163px;
@@ -67,7 +67,7 @@
   align-items: end;
   text-align: right;
   line-height: 20px;
-  color: $secondary-text-color;
+  color: $primary-text-color;
 
   @media (min-width: $tablet-min-width) {
     justify-self: end;
