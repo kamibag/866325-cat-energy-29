@@ -78,6 +78,7 @@
 .nav__link-text {
   padding: 0 0 5px;
   margin: 0 0 -5px;
+  color: $secondary-text-color;
 
   &--current {
     border-bottom: 2px solid $primary-color;

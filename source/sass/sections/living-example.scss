@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $desktop-min-width) {
-    padding: 0 110px;
+    padding: 0 110px 75px;
     background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 462px, transparent 462px);
   }
 }
@@ -55,6 +55,7 @@
   @media (min-width: $tablet-min-width) {
     margin: 0 0 55px;
     grid-column: span 2;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -98,11 +99,14 @@
   padding: 14px 0 17px;
   border: 1px solid $color-line-block;
   border-radius: 3px;
+  color: $secondary-text-color;
 
   @media (min-width: $tablet-min-width) {
     font-size: 30px;
     line-height: 37px;
+    flex-shrink: 0;
   }
+
 }
 
 .living-example__value {
@@ -137,6 +141,7 @@
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  color: $secondary-text-color;
 
   @media (min-width: $tablet-min-width) {
     margin: 0;
@@ -168,6 +173,7 @@
   @media (min-width: $tablet-min-width) {
     font-size: 20px;
     justify-self: end;
+    margin: 0 0 10px;
   }
 }
 

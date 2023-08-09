@@ -59,15 +59,15 @@
 }
 
 .card-product__title {
-  align-self: center;
   margin: 10px 0;
-  max-width: 76px;
   font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: $grey-dark;
   text-transform: uppercase;
+  text-align: left;
+  max-width: 76px;
 
   @media (min-width: $tablet-min-width) {
     margin: 40px 0 20px;
@@ -75,6 +75,7 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    align-self: center;
   }
 }
 

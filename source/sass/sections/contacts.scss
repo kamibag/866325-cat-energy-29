@@ -81,10 +81,13 @@
 
 .contacts__text {
   margin: 0;
+  text-align: left;
+  align-self: start;
 
   @media (min-width: $tablet-min-width) {
     width: 157px;
-  }
+    text-align: right;
+    }
 }
 
 .contacts__map-wrapper {

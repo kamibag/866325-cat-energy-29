@@ -121,4 +121,8 @@
   margin: 0;
   line-height: 18px;
   color: $primary-text-color;
+
+  @media (min-width: $tablet-min-width) {
+    line-height: 24px;
+  }
 }
