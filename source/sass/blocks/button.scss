@@ -48,15 +48,4 @@
       outline: 2px solid $grey-medium;
     }
   }
-
-  &--card {
-    font-size: 16px;
-    line-height: 20px;
-
-    @media (width >= $tablet-min-width) {
-      padding: 10px 20px;
-      font-size: 16px;
-      line-height: 20px;
-    }
-  }
 }

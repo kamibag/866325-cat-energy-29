@@ -14,7 +14,7 @@
   @media (width >= $tablet-min-width) {
     grid-template-columns: 1fr auto;
     gap: 23px;
-    padding: 26px 25px 28px;
+    padding: 26px 37px 28px;
     border: 1px solid $main-border-color;
   }
 
@@ -29,10 +29,6 @@
       border-bottom: 1px solid $main-border-color;
     }
   }
-}
-
-.additional-goods__item {
-  border-top: 1px solid $main-border-color;
 }
 
 .additional-item__title {
@@ -54,9 +50,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 10px 0;
-  font-family: $primary-font-family;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 14px;
   color: $primary-text-color;
 

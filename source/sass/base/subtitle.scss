@@ -13,59 +13,18 @@
   background-color: $primary-bg-color;
 
   @media (width >= $tablet-min-width) {
-    margin-left: -20px;
-    padding: 0 20px 0;
+    margin-left: -40px;
+    padding: 0 40px;
     font-size: 36px;
   }
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    width: calc(100vw - 20px);
-    height: 3px;
-    margin-top: calc(1em / 2 + 3px);
-    background-color: $primary-color;
-    z-index: -1;
-
+  &--catalog {
     @media (width >= $tablet-min-width) {
-      width: calc(100vw - 30px);
+      margin-left: 0;
     }
 
     @media (width >= $desktop-min-width) {
-      width: calc(100vw - 110px);
-    }
-  }
-
-  &::before {
-    display: none;
-
-    @media (width >= $tablet-min-width) {
-      display: block;
-      right: 100%;
-    }
-
-    @media (width >= $desktop-min-width) {
-      margin-right: 37px;
-    }
-  }
-
-  &::after {
-    left: 0;
-  }
-
-  &--form {
-    &::before,
-    &::after {
-      @media (width >= $tablet-min-width) {
-        width: calc(100vw - 70px);
-      }
-
-      @media (width >= $desktop-min-width) {
-        width: calc(100vw - 110px);
-      }
+      margin-left: -40px;
     }
   }
 }

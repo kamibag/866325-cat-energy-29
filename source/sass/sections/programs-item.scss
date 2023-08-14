@@ -117,13 +117,14 @@
 .programs-item__description {
   grid-column: span 2;
   margin: 0;
-  padding-bottom: 23px;
+  padding: 22px 0 23px;
   line-height: 18px;
   color: $primary-text-color;
   border-bottom: 1px solid $grey-light;
 
   @media (width >= $tablet-min-width) {
     margin: 0 0 52px;
+    padding: 0;
     line-height: 24px;
     color: $secondary-text-color;
     grid-column: 1;
@@ -140,6 +141,7 @@
   grid-column: span 2;
   display: flex;
   gap: 20px;
+  padding-top: 19px;
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
@@ -151,6 +153,7 @@
   color: $secondary-text-color;
 
   @media (width >= $tablet-min-width) {
+    padding-top: 0;
     font-size: 20px;
   }
 
