@@ -114,18 +114,6 @@
   }
 }
 
-.programs-item__icon-wrapper {
-
-}
-
-.programs-item__icon {
-  &--slim {
-  }
-
-  &--pro {
-  }
-}
-
 .programs-item__description {
   grid-column: span 2;
   margin: 0;
@@ -133,7 +121,6 @@
   line-height: 18px;
   color: $primary-text-color;
   border-bottom: 1px solid $grey-light;
-
 
   @media (width >= $tablet-min-width) {
     margin: 0 0 52px;
