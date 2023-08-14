@@ -1,0 +1,72 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.field-radio {
+  display: flex;
+}
+
+.field-radio__input {
+  @include visually-hidden();
+}
+
+.field-radio__label {
+  position: relative;
+  padding: 12px 0 12px 46px;
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $grey-dark;
+  text-transform: uppercase;
+  user-select: none;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 16px 0 16px 60px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border: 1px solid $color-line-block;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-min-width) {
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+    }
+  }
+}
+
+.field-radio__input:checked ~ .field-radio__label::before {
+  background-color: $primary-color;
+  background-clip: content-box;
+}
+
+.field-radio__input:focus ~ .field-radio__label::before {
+  outline: 1px solid $primary-text-color;
+}
+
+.field-radio__input:not(:disabled) ~ .field-radio__label:hover::before {
+  border-color: $grey-medium;
+}
+
+.field-radio__input:disabled ~ .field-radio__label {
+  opacity: 0.3;
+}
+
+.field-radio__input:disabled ~ .field-radio__label:hover {
+  cursor: default;
+}

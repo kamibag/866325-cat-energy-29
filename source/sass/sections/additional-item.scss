@@ -2,30 +2,93 @@
 
 .additional-item {
   padding: 20px 0;
+  display: grid;
+  justify-content: stretch;
+  align-items: center;
+  border-top: 1px solid $color-line-block;
+
+  &:last-child {
+    border-bottom: 1px solid $color-line-block;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: 1fr auto;
+    gap: 23px;
+    padding: 26px 25px 28px;
+    border: 1px solid $color-line-block;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: 1fr 1fr 244px;
+    gap: 40px;
+    padding: 15px 0 17px;
+    border: 0;
+    border-top: 1px solid $color-line-block;
+
+    &:last-child {
+      border-bottom: 1px solid $color-line-block;
+    }
+  }
+}
+
+.additional-goods__item {
+  border-top: 1px solid $color-line-block;
 }
 
 .additional-item__title {
   margin: 0 0 10px;
-  font-family: $primary-font-family;
+  font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1;
   color: $grey-dark;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    margin: 0;
+  }
 }
 
 .additional-item__characteristics {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   margin: 10px 0;
-  font-family: $secondary-font-family;
+  font-family: $primary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  color: $secondary-text-color;
+  color: $primary-text-color;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: repeat(2, auto);
+    gap: 0 29px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: 1fr auto;
+  }
 }
 
 .additional-item__value {
   justify-self: end;
   margin: 0;
+}
+
+.additional-item__button {
+  @media (min-width: $tablet-min-width) {
+    grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-column: 3;
+  }
+}
+
+.additional-goods__prize {
+  @media (min-width: $desktop-min-width) {
+    align-self: stretch;
+  }
 }

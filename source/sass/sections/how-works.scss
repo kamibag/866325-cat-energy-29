@@ -5,14 +5,29 @@
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 0 109px 47px 30px;
+    border-bottom: 1px solid $color-line-nav;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding: 0 110px;
+    border: 0;
+  }
 }
 
 .how-works__title {
-  margin: 10px 0 20px;
-  font-family: $primary-font-family;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 40px;
+  margin: 0 0 40px;
+  line-height: 1;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 0 0 72px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 0 0 72px;
+  }
 }
 
 .how-works__list {
@@ -23,6 +38,19 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-min-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 80px 179px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 95px;
+  }
 }
 
 .how-works__item {
@@ -31,6 +59,48 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: 1fr;
+    padding: 0 0 50px;
+    gap: 31px;
+  }
+
+  &--first {
+    @media (min-width: $tablet-min-width) {
+      background-image: url("../img/icons/number_first.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+    }
+  }
+
+  &--second {
+    @media (min-width: $tablet-min-width) {
+      background-image: url("../img/icons/number_second.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+    }
+  }
+
+  &--third {
+    @media (min-width: $tablet-min-width) {
+      background-image: url("../img/icons/number_third.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+    }
+  }
+
+  &--fourth {
+    @media (min-width: $tablet-min-width) {
+      background-image: url("../img/icons/number_fourth.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+    }
+  }
 }
 
 .how-works__picture {
@@ -40,14 +110,19 @@
   width: 60px;
   height: 60px;
   background: $primary-color;
+
+  @media (min-width: $tablet-min-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .how-works__description {
   margin: 0;
-  font-family: $secondary-font-family;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
-  text-align: left;
-  color: $secondary-text-color;
+  color: $primary-text-color;
+
+  @media (min-width: $tablet-min-width) {
+    line-height: 24px;
+  }
 }

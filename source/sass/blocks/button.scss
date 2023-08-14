@@ -1,13 +1,9 @@
 @use "../base/variables" as *;
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px 20px;
-  font-family: $primary-font-family;
+  font-family: $secondary-font-family;
   font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
   text-align: center;
   color: $secondary-color;
@@ -17,8 +13,14 @@
   border: none;
   outline: none;
 
+  @media (min-width: $tablet-min-width) {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   &:hover {
-    background: $green-light;
+    background: $green-medium;
     cursor: pointer;
   }
 
@@ -26,13 +28,28 @@
     color: rgba($secondary-color, 0.3);
   }
 
+  &:focus {
+    outline: 2px solid $primary-text-color;
+  }
+
   &--second {
     background: $secondary-bg-color;
-    color: $secondary-text-color;
+    color: $primary-text-color;
 
     &:hover {
       background: $grey-lighter;
-      color: rgba($secondary-text-color, 0.3);
+      color: rgba($primary-text-color, 0.3);
+    }
+  }
+
+  &--card {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-min-width) {
+      padding: 10px 20px;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 }

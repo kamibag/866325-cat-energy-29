@@ -1,7 +1,11 @@
 @use "../base/variables" as *;
 
 .html-academy {
-  padding: 10px 0 0;
+  padding: 20px 0 0;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 0;
+  }
 }
 
 .html-academy__link {
@@ -10,16 +14,16 @@
   justify-content: space-between;
   align-items: center;
 
-  &:active > .html-academy__text {
+  @media (min-width: $tablet-min-width) {
+    gap: 23px;
+  }
+
+  &:active {
     opacity: 0.3;
   }
 }
 
 .html-academy__text {
-  font-family: $secondary-font-family;
-  font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
-  text-align: left;
-  color: $secondary-text-color;
+  color: $primary-text-color;
 }

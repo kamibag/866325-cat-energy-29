@@ -1,6 +1,10 @@
 @use "base/variables" as *;
 @use "base/fonts";
 @use "base/base";
+@use "base/mixins" as *;
+@use "base/title";
+@use "base/subtitle";
+@use "base/text";
 @use "blocks/page";
 @use "header/header";
 @use "header/nav";
@@ -22,3 +26,6 @@
 @use "sections/prize-container";
 @use "sections/program-choice";
 @use "sections/form";
+@use "blocks/field-text";
+@use "blocks/field-radio";
+@use "blocks/field-checkbox";

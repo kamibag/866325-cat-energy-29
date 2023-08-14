@@ -4,20 +4,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 40px 20px;
   background: $secondary-bg-color;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding: 66px 110px;
+  }
 }
 
 .footer__wrapper {
   display: grid;
   align-items: center;
   width: 100%;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .footer__logo-text {
-  padding: 0 0 10px;
+  padding: 0 0 20px;
   text-align: center;
-  border-bottom: 1px solid $grey-light;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 0;
+    justify-self: start;
+  }
 }
 
 .footer__logo-text-link {
@@ -30,6 +46,8 @@
   }
 }
 
-.footer__social {
-  border-bottom: 1px solid $grey-light;
+.footer__html-academy {
+  @media (min-width: $tablet-min-width) {
+    justify-self: end;
+  }
 }
