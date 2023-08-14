@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+source,
+img {
+  display: block;
+}
+
+picture {
+  display: block;
+  height: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);

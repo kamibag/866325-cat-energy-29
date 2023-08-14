@@ -51,14 +51,14 @@
   color: $secondary-text-color;
   border: 1px solid $primary-border-input;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     padding: 11px 20px;
     font-size: 20px;
     line-height: normal;
   }
 
   &:hover {
-    border-color: $color-line-block;
+    border-color: $main-border-color;
   }
 
   &:focus {
@@ -78,7 +78,7 @@
     text-transform: uppercase;
     color: $secondary-text-color;
 
-    @media (min-width: $tablet-min-width) {
+    @media (width >= $tablet-min-width) {
       font-size: 20px;
       line-height: normal;
     }
@@ -86,7 +86,7 @@
 
   &--email,
   &--phone {
-    border: 1px solid $color-line-block;
+    border: 1px solid $main-border-color;
   }
 
   &--comment {
@@ -103,7 +103,7 @@
   color: $secondary-text-color;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     font-size: 20px;
     line-height: normal;
   }

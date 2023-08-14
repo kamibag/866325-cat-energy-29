@@ -3,7 +3,7 @@
 .html-academy {
   padding: 20px 0 0;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     padding: 0;
   }
 }
@@ -14,12 +14,30 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     gap: 23px;
+    justify-content: end;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/icons/html-academy.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("../img/icons/html-academy-hover.svg");
+    }
   }
 }
 

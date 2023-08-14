@@ -20,7 +20,7 @@
   text-transform: uppercase;
   user-select: none;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     font-size: 20px;
     line-height: 30px;
     padding: 16px 0 16px 60px;
@@ -39,10 +39,10 @@
     width: 30px;
     height: 30px;
     padding: 8px;
-    border: 1px solid $color-line-block;
+    border: 1px solid $main-border-color;
     border-radius: 50%;
 
-    @media (min-width: $tablet-min-width) {
+    @media (width >= $tablet-min-width) {
       width: 40px;
       height: 40px;
       padding: 10px;
@@ -56,7 +56,7 @@
 }
 
 .field-radio__input:focus ~ .field-radio__label::before {
-  border-color: $color-line-block;
+  border-color: $main-border-color;
 }
 
 .field-radio__input:not(:disabled) ~ .field-radio__label:hover::before {

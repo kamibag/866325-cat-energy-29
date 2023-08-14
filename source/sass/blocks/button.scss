@@ -13,14 +13,14 @@
   border: none;
   outline: none;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     padding: 14px 26px;
     font-size: 20px;
     line-height: 20px;
   }
 
   &:hover {
-    background: $green-medium;
+    background: $button-hover-color;
     cursor: pointer;
   }
 
@@ -29,7 +29,7 @@
   }
 
   &:focus {
-    outline: 2px solid $primary-text-color;
+    outline: 2px solid $button-focus-color;
   }
 
   &--second {
@@ -38,7 +38,14 @@
 
     &:hover {
       background: $grey-lighter;
+    }
+
+    &:active {
       color: rgba($primary-text-color, 0.3);
+    }
+
+    &:focus {
+      outline: 2px solid $grey-medium;
     }
   }
 
@@ -46,7 +53,7 @@
     font-size: 16px;
     line-height: 20px;
 
-    @media (min-width: $tablet-min-width) {
+    @media (width >= $tablet-min-width) {
       padding: 10px 20px;
       font-size: 16px;
       line-height: 20px;

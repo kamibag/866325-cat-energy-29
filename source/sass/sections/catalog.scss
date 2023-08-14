@@ -5,11 +5,11 @@
   justify-content: center;
   align-items: center;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     padding: 0 30px;
   }
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
     padding: 0 110px;
   }
 }
@@ -25,12 +25,12 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
   }
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 63px 80px;
   }

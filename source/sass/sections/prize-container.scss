@@ -12,14 +12,14 @@
   background-position: center;
   background-size: cover;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     flex-direction: row;
     gap: 264px;
     padding: 57px 125px 60px 77px;
     background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/gift-tablet.png");
   }
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
     flex-direction: column;
     gap: 46px;
     padding: 56px 42px 43px;

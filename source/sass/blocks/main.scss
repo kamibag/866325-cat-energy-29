@@ -1,100 +1,74 @@
 @use "../base/variables" as *;
 
-.main__title {
-  margin: 27px 0 41px;
-  padding: 0 20px;
-  text-align: left;
-
-  @media (min-width: $tablet-min-width) {
-    margin: 65px 0 84px;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-min-width) {
-    margin: 74px 0 84px;
-    padding: 0 110px;
-  }
-
-  &--form {
-    @media (min-width: $tablet-min-width) {
-      margin: 65px 0 54px;
-      padding: 0 70px;
-    }
-
-    @media (min-width: $desktop-min-width) {
-      margin: 74px 0 55px;
-      padding: 0 110px;
-    }
-  }
-}
-
 .main__top-section {
   position: relative;
-  margin: 0 0 20px;
+  margin-bottom: 20px;
 
-  @media (min-width: $tablet-min-width) {
-    margin: 0;
+  @media (width >= $tablet-min-width) {
+    margin-bottom: 0;
   }
 
-  @media (min-width: $desktop-min-width) {
-    margin: 0 0 50px;
+  @media (width >= $desktop-min-width) {
+    margin-bottom: 82px;
   }
 }
 
 .main__programs {
-  margin: 0 0 20px;
+  margin-bottom: 20px;
 
-  @media (min-width: $tablet-min-width) {
-    margin: 0 0 45px;
+  @media (width >= $tablet-min-width) {
+    margin-bottom: 45px;
   }
 
-  @media (min-width: $desktop-min-width) {
-    margin: 0 0 71px;
+  @media (width >= $desktop-min-width) {
+    margin-bottom: 71px;
   }
 }
 
 .main__how-works {
-  margin: 0 0 49px;
+  margin-bottom: 49px;
 
-  @media (min-width: $tablet-min-width) {
-    margin: 0;
+  @media (width >= $tablet-min-width) {
+    margin-bottom: 0;
   }
 
-  @media (min-width: $desktop-min-width) {
-    margin: 0 0 72px;
+  @media (width >= $desktop-min-width) {
+    margin-bottom: 49px;
   }
 }
 
 .main__catalog {
-  @media (min-width: $tablet-min-width) {
-    margin: 0 0 70px;
+  margin-bottom: 25px;
+
+  @media (width >= $tablet-min-width) {
+    margin-bottom: 70px;
   }
 
-  @media (min-width: $desktop-min-width) {
-    margin: 0 0 76px;
+  @media (width >= $desktop-min-width) {
+    margin-bottom: 76px;
   }
 }
 
 .main__additional-goods {
-  margin: 0 0 20px;
+  margin-bottom: 35px;
 
-  @media (min-width: $tablet-min-width) {
-    margin: 0 0 75px;
+  @media (width >= $tablet-min-width) {
+    margin-bottom: 75px;
   }
 
-  @media (min-width: $desktop-min-width) {
-    margin: 0 0 87px;
+  @media (width >= $desktop-min-width) {
+    margin-bottom: 87px;
   }
 }
 
 .main__program-choice {
-  margin: 0 0 20px;
+  margin-bottom: 32px;
 
-  @media (min-width: $tablet-min-width) {
-    margin: 0 0 60px;
+  @media (width >= $tablet-min-width) {
+    margin-bottom: 60px;
   }
 
-  @media (min-width: $desktop-min-width) {
-    margin: 0 0 80px;
+  @media (width >= $desktop-min-width) {
+    margin-bottom: 80px;
   }
 }

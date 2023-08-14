@@ -1,18 +1,30 @@
 @use "../base/variables" as *;
 
 .header {
+  @media (width >= $tablet-min-width) {
+    padding: 25px 0 0;
+  }
+
+  @media (width >= $desktop-min-width) {
+    padding: 56px 0 0;
+  }
+
+  &--second {
+    border-bottom: 1px solid $grey-light;
+
+    @media (width >= $tablet-min-width) {
+      border-bottom: none;
+    }
+  }
+}
+
+.header__container {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  padding: 13px 0 0;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     grid-template-columns: auto 1fr;
-    padding: 25px 33px 0 30px;
-  }
-
-  @media (min-width: $desktop-min-width) {
-    padding: 56px 110px 0;
   }
 }
 
@@ -21,9 +33,9 @@
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  padding: 0 20px 10px;
+  padding: 13px 0 15px;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +44,27 @@
   }
 }
 
-.header__logo-main {
+.header__logo {
+  display: block;
+  width: 33px;
+  height: 38px;
+  background-image: url("../img/icons/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  @media (width >= $tablet-min-width) {
+    width: 60px;
+    height: 50px;
+    background-image: url("../img/icons/logo-tablet.svg");
+  }
+
+  @media (width >= $desktop-min-width) {
+    width: 70px;
+    height: 59px;
+    background-image: url("../img/icons/logo-desktop.svg");
+  }
+
   &[href]:hover {
     opacity: 0.8;
   }
@@ -42,25 +74,26 @@
   }
 }
 
-.header__logo-main-image {
-  @media (min-width: $tablet-min-width) {
-    width: 60px;
-    height: 50px;
-  }
-
-  @media (min-width: $desktop-min-width) {
-    width: 70px;
-    height: 59px;
-  }
-}
-
 .header__logo-item {
-  &--secondary {
+  &--second {
     justify-self: center;
   }
 }
 
 .header__logo-text {
+  display: block;
+  width: 101px;
+  height: 18px;
+  background-image: url("../img/icons/text-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  @media (width >= $tablet-min-width) {
+    width: 119px;
+    height: 21px;
+  }
+
   &[href]:hover {
     opacity: 0.8;
   }
@@ -70,37 +103,14 @@
   }
 }
 
-.header__logo-text-image {
-  @media (min-width: $tablet-min-width) {
-    width: 119px;
-    height: 21px;
-  }
-}
-
-.header__button-wrapper {
-  justify-self: end;
-
-  @media (min-width: $tablet-min-width) {
-    display: none;
-  }
-}
-
-.header__button {
-  padding: 0;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
 .header__nav {
   grid-column: span 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 -20px;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     justify-self: end;
     grid-column: 2;
     grid-row: 1;
+    margin: 0;
   }
 }

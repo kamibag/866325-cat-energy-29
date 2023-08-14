@@ -4,51 +4,49 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 27px 20px 0;
+  padding-top: 27px;
 
-  @media (min-width: $tablet-min-width) {
-    padding: 0 120px;
+  @media (width >= $tablet-min-width) {
+    padding-top: 0;
   }
 
-  @media (min-width: $desktop-min-width) {
-    padding: 0 190px 100px;
+  @media (width >= $desktop-min-width) {
+    padding-bottom: 82px;
   }
 }
 
-.top-section__wrapper {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+.top-section__container {
+  display: grid;
+  justify-content: stretch;
   align-items: center;
   width: 100%;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     position: relative;
-    align-items: start;
-    padding: 0 0 526px;
+    justify-content: start;
+    padding: 0 120px 526px;
   }
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 20px;
-    padding: 0 0 0;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 80px;
   }
 }
 
 .top-section__title {
   margin: 0 0 25px;
-  line-height: 1;
   text-align: center;
   color: $secondary-color;
 
-  @media (min-width: $tablet-min-width) {
-    margin: 80px 0 40px;
+  @media (width >= $tablet-min-width) {
+    margin: 65px 0 40px;
     text-align: left;
     color: $secondary-text-color;
   }
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
+    margin-top: 110px;
     grid-column: 1;
     grid-row: 1;
   }
@@ -64,34 +62,35 @@
   text-transform: uppercase;
   color: $secondary-color;
 
-  @media (min-width: $tablet-min-width) {
-    margin: 0 0 50px;
+  @media (width >= $tablet-min-width) {
+    margin-bottom: 50px;
     text-align: left;
     font-size: 20px;
     color: $secondary-text-color;
   }
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
+    margin-bottom: 52px;
     grid-column: 1;
     grid-row: 2;
   }
 }
 
 .top-section__image-wrapper {
-  align-self: center;
+  justify-self: center;
   margin: 0 0 3px;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     margin: 0;
     position: absolute;
     z-index: -1;
     bottom: 0;
   }
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
     position: relative;
-    top: 20px;
-    left: -130px;
+    top: 30px;
+    left: -140px;
     grid-column: 2;
     grid-row: 1 / 5;
   }
@@ -99,13 +98,14 @@
 
 .top-section__image {
   display: block;
+  margin: 0 auto;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     width: 709px;
     height: 609px;
   }
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
     width: 552px;
     height: 499px;
   }
@@ -114,12 +114,11 @@
 .top-section__link {
   align-self: stretch;
 
-  @media (min-width: $tablet-min-width) {
-    align-self: inherit;
+  @media (width >= $tablet-min-width) {
+    justify-self: start;
   }
 
-  @media (min-width: $desktop-min-width) {
-    justify-self: start;
+  @media (width >= $desktop-min-width) {
     grid-column: 1;
     grid-row: 3;
   }
@@ -137,15 +136,15 @@
   width: 100%;
   height: 100%;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     display: none;
   }
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
     top: -120px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     height: calc(100% + 120px);
   }
 }
@@ -155,12 +154,12 @@
   flex: 1 0 302px;
   width: 100%;
   height: 302px;
-  background-image: linear-gradient(to bottom, rgba($primary-color, 0.85) 302px, transparent 302px), url("../img/content/slider-cat-mobile.jpg");
+  background-image: linear-gradient(to bottom, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/slider-cat-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
     width: 100%;
     height: 100%;
     grid-column: 2;
@@ -174,7 +173,7 @@
   width: 100%;
   height: 100%;
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
     grid-column: 1;
     grid-row: 1;
   }

@@ -12,7 +12,7 @@
   color: $secondary-text-color;
   background-color: $primary-bg-color;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     margin-left: -20px;
     padding: 0 20px 0;
     font-size: 36px;
@@ -30,11 +30,11 @@
     background-color: $primary-color;
     z-index: -1;
 
-    @media (min-width: $tablet-min-width) {
+    @media (width >= $tablet-min-width) {
       width: calc(100vw - 30px);
     }
 
-    @media (min-width: $desktop-min-width) {
+    @media (width >= $desktop-min-width) {
       width: calc(100vw - 110px);
     }
   }
@@ -42,12 +42,12 @@
   &::before {
     display: none;
 
-    @media (min-width: $tablet-min-width) {
+    @media (width >= $tablet-min-width) {
       display: block;
       right: 100%;
     }
 
-    @media (min-width: $desktop-min-width) {
+    @media (width >= $desktop-min-width) {
       margin-right: 37px;
     }
   }
@@ -59,11 +59,11 @@
   &--form {
     &::before,
     &::after {
-      @media (min-width: $tablet-min-width) {
+      @media (width >= $tablet-min-width) {
         width: calc(100vw - 70px);
       }
 
-      @media (min-width: $desktop-min-width) {
+      @media (width >= $desktop-min-width) {
         width: calc(100vw - 110px);
       }
     }

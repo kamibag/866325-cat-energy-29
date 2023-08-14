@@ -5,7 +5,7 @@
   border-top: 1px solid $grey-light;
   border-bottom: 1px solid $grey-light;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     padding: 0;
     border: 0;
   }
@@ -22,7 +22,53 @@
 }
 
 .social__link {
+
+
   &:active {
     opacity: 0.3;
   }
+
+  &--vk {
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-image: url("../img/icons/vkontakte.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+    &:hover {
+      background-image: url("../img/icons/vkontakte-hover.svg");
+    }
+  }
+
+  &--youtube {
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-image: url("../img/icons/youtube.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+    &:hover {
+      background-image: url("../img/icons/youtube-hover.svg");
+    }
+  }
+
+  &--telegram {
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-image: url("../img/icons/telegram.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+    &:hover {
+      background-image: url("../img/icons/telegram-hover.svg");
+    }
+  }
+
+
 }
