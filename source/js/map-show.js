@@ -1,2 +1,2 @@
-document.querySelector('.contacts__map-picture').classList.remove('location__map-picture--nojs');
-document.querySelector('.contacts__map-iframe').classList.remove('location__map-iframe--nojs');
+document.querySelector('.contacts__map-picture').classList.remove('contacts__map-picture--no-js');
+document.querySelector('.contacts__map-iframe').classList.remove('contacts__map-iframe--no-js');
