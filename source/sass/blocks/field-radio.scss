@@ -11,7 +11,7 @@
 
 .field-radio__label {
   position: relative;
-  padding: 12px 0 12px 46px;
+  padding: 6px 0 6px 46px;
   font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
@@ -23,7 +23,7 @@
   @media (width >= $tablet-min-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 16px 0 16px 60px;
+    padding: 6px 0 6px 60px;
   }
 
   &:hover {
@@ -34,7 +34,7 @@
     content: "";
     position: absolute;
     display: block;
-    top: 6px;
+    top: calc(50% - 15px);
     left: 0;
     width: 30px;
     height: 30px;
@@ -43,6 +43,7 @@
     border-radius: 50%;
 
     @media (width >= $tablet-min-width) {
+      top: calc(50% - 20px);
       width: 40px;
       height: 40px;
       padding: 10px;

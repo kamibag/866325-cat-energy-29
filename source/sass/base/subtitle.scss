@@ -3,7 +3,8 @@
 .subtitle {
   position: relative;
   display: inline-block;
-  padding: 0 20px 0 0;
+  margin-left: -20px;
+  padding: 0 20px 0;
   text-align: left;
   font-family: $secondary-font-family;
   font-size: 24px;
