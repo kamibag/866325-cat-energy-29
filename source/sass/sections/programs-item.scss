@@ -116,14 +116,14 @@
 
 .programs-item__description {
   grid-column: span 2;
-  margin: 0;
+  margin: 0 0 19px;
   padding: 22px 0 23px;
   line-height: 18px;
   color: $primary-text-color;
   border-bottom: 1px solid $grey-light;
 
   @media (width >= $tablet-min-width) {
-    margin: 0 0 52px;
+    margin-bottom: 52px;
     padding: 0;
     line-height: 24px;
     color: $secondary-text-color;
@@ -132,16 +132,16 @@
   }
 
   @media (width >= $desktop-min-width) {
-    margin: 0 0 27px;
+    margin-bottom: 27px;
     grid-column: span 2;
   }
 }
 
 .programs-item__link {
+  justify-self: start;
   grid-column: span 2;
   display: flex;
   gap: 20px;
-  padding-top: 19px;
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;

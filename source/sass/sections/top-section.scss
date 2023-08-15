@@ -130,7 +130,7 @@
   left: 0;
   z-index: -10;
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: stretch;
   align-items: center;
   width: 100%;

@@ -42,6 +42,10 @@
     cursor: pointer;
     opacity: 0.3;
   }
+
+  &:focus {
+    outline: 2px solid $main-border-color;
+  }
 }
 
 .nav__inner {
