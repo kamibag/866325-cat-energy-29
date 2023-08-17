@@ -1,24 +1,13 @@
 @use "../base/variables" as *;
 
 .additional-goods {
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-min-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-min-width) {
-    padding: 0 110px;
-  }
+  position: relative;
 }
 
-.additional-goods__wrapper {
+.additional-goods__inner {
   width: 100%;
 
-  @media (min-width: $desktop-min-width) {
+  @media (width >= $desktop-min-width) {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
@@ -27,12 +16,11 @@
 }
 
 .additional-goods__title {
-  margin: 25px 0 36px;
-  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 36px;
 
-  @media (min-width: $tablet-min-width) {
-    margin: 0 0 80px;
-    line-height: 36px;
+  @media (width >= $tablet-min-width) {
+    margin-bottom: 80px;
     grid-column: span 2;
   }
 }
@@ -44,11 +32,21 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: $tablet-min-width) {
-    margin: 0 0 70px;
+  @media (width >= $tablet-min-width) {
+    margin-bottom: 70px;
   }
 
-  @media (min-width: $desktop-min-width) {
-    margin: 0;
+  @media (width >= $desktop-min-width) {
+    margin-bottom: 0;
+  }
+}
+
+.additional-goods__item:not(:last-child) {
+  margin-bottom: -1px;
+}
+
+.additional-goods__prize {
+  @media (width >= $desktop-min-width) {
+    align-self: stretch;
   }
 }

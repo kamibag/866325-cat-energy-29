@@ -2,10 +2,11 @@
 @use "base/fonts";
 @use "base/base";
 @use "base/mixins" as *;
-@use "base/title";
-@use "base/subtitle";
-@use "base/text";
+@use "base/title-h1";
+@use "base/title-h2";
+@use "base/title-container";
 @use "blocks/page";
+@use "blocks/container";
 @use "header/header";
 @use "header/nav";
 @use "blocks/main";
@@ -29,3 +30,4 @@
 @use "blocks/field-text";
 @use "blocks/field-radio";
 @use "blocks/field-checkbox";
+@use "blocks/slider";

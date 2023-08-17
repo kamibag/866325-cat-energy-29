@@ -1,25 +1,48 @@
 @use "../base/variables" as *;
 
 .html-academy {
+  display: flex;
+  justify-content: stretch;
   padding: 20px 0 0;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
+    justify-content: end;
     padding: 0;
   }
 }
 
 .html-academy__link {
-  text-decoration: none;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
+    width: auto;
     gap: 23px;
+    justify-content: end;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/icons/html-academy.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("../img/icons/html-academy-hover.svg");
+    }
   }
 }
 

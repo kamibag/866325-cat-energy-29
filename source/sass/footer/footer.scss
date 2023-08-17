@@ -4,39 +4,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 40px 0;
   background: $secondary-bg-color;
 
-  @media (min-width: $tablet-min-width) {
-    padding: 55px 30px;
+  @media (width >= $tablet-min-width) {
+    padding: 55px 0;
   }
 
-  @media (min-width: $desktop-min-width) {
-    padding: 66px 110px;
+  @media (width >= $desktop-min-width) {
+    padding: 66px 0;
   }
 }
 
-.footer__wrapper {
+.footer__container {
   display: grid;
   align-items: center;
   width: 100%;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .footer__logo-text {
-  padding: 0 0 20px;
+  display: block;
+  margin: 0 auto 20px;
   text-align: center;
+  width: 128px;
+  height: 24px;
+  background-image: url("../img/icons/footer-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
+    margin: 0;
     padding: 0;
     justify-self: start;
   }
-}
 
-.footer__logo-text-link {
   &[href]:hover {
     opacity: 0.8;
   }
@@ -47,7 +53,7 @@
 }
 
 .footer__html-academy {
-  @media (min-width: $tablet-min-width) {
+  @media (width >= $tablet-min-width) {
     justify-self: end;
   }
 }
