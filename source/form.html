@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-<header class="header header--second">
+<header class="header">
   <div class="header__container container">
     <div class="header__logo-wrapper">
       <div class="header__logo-item">
         <a class="header__logo" href="index.html" title="Главная"></a>
       </div>
       <div class="header__logo-item header__logo-item--second">
-        <a class="header__logo-text" href="index.html" title="Главная"></a>
+        <a class="header__logo-text" href="index.html" title="Главная" tabindex="-1"></a>
       </div>
     </div>
     <nav class="header__nav nav nav--closed nav--no-js">
@@ -41,8 +41,8 @@
 <main class="main">
   <section class="main__program-choice program-choice">
     <form class="program-choice__form form">
-      <div class="form__container container container--form">
-        <h1 class="program-choice__title title">Подбор программы</h1>
+      <div class="form__container container container--narrow">
+        <h1 class="program-choice__title title-h1">Подбор программы</h1>
         <h2 class="visually-hidden">Ваша анкета</h2>
         <p class="program-choice__text">Заполните анкету, и мы подберём программу питания для вашего кота</p>
         <fieldset class="form__area-input">
@@ -75,8 +75,10 @@
         </fieldset>
       </div>
       <fieldset class="form__area-owner-cat">
-        <div class="form__owner-cat-container container container--form container--line">
-          <h2 class="form__title-owner-cat subtitle">Контактные данные (владельца кота)</h2>
+        <div class="form__title-owner-cat title-container">
+          <h2 class="title-h2">Контактные данные (владельца кота)</h2>
+        </div>
+        <div class="form__owner-cat-container container container--narrow container--line">
           <div class="form__area-text">
             <div class="field-text">
               <label class="field-text__label" for="email">E-mail:*</label>
@@ -96,14 +98,18 @@
         </div>
       </fieldset>
       <fieldset class="form__area-comment">
-        <div class="form__comment-container container container--form container--line">
-          <h2 class="form__title-comment subtitle">Комментарий</h2>
+        <div class="form__title-comment title-container">
+          <h2 class="title-h2">Комментарий</h2>
+        </div>
+        <div class="form__comment-container container container--narrow">
           <textarea class="form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий" rows="5"></textarea>
         </div>
       </fieldset>
       <fieldset class="form__area-additional">
-        <div class="form__-additional-container container container--form container--line">
-          <h2 class="form__title-additional subtitle">Дополнительно</h2>
+        <div class="form__title-additional title-container">
+          <h2 class="title-h2">Дополнительно</h2>
+        </div>
+        <div class="form__additional-container container container--narrow">
           <div class="form__area-checkbox">
             <div class="field-checkbox">
               <input class="field-checkbox__input" type="checkbox" name="additionally" id="sugar-substitute" value="sugar-substitute" checked>
@@ -125,7 +131,7 @@
         </div>
       </fieldset>
       <div class="form__bottom">
-        <div class="form__bottom-container container container--form">
+        <div class="form__bottom-container container container--narrow">
           <button class="form__button button">Отправить заявку</button>
           <div class="form__required">
             <span class="form__required-text">* – Обязательные поля</span>

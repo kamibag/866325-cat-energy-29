@@ -1,7 +1,10 @@
 @use "../base/variables" as *;
 
 .header {
+  border-bottom: 1px solid $grey-light;
+
   @media (width >= $tablet-min-width) {
+    border-bottom: none;
     padding: 25px 0 0;
   }
 
@@ -9,12 +12,8 @@
     padding: 56px 0 0;
   }
 
-  &--second {
-    border-bottom: 1px solid $grey-light;
-
-    @media (width >= $tablet-min-width) {
-      border-bottom: none;
-    }
+  &--index {
+    border-bottom: none;
   }
 }
 

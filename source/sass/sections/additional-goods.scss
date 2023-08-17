@@ -18,11 +18,9 @@
 .additional-goods__title {
   margin-top: 0;
   margin-bottom: 36px;
-  line-height: 24px;
 
   @media (width >= $tablet-min-width) {
     margin-bottom: 80px;
-    line-height: 36px;
     grid-column: span 2;
   }
 }

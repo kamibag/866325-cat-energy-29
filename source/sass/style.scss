@@ -2,8 +2,9 @@
 @use "base/fonts";
 @use "base/base";
 @use "base/mixins" as *;
-@use "base/title";
-@use "base/subtitle";
+@use "base/title-h1";
+@use "base/title-h2";
+@use "base/title-container";
 @use "blocks/page";
 @use "blocks/container";
 @use "header/header";
