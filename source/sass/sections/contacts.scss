@@ -16,7 +16,7 @@
     position: absolute;
     height: 400px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
 }
@@ -61,7 +61,7 @@
 
 .contacts__text-wrapper {
   display: grid;
-  justify-content: start;
+  justify-content: flex-start;
   align-content: start;
   margin: 0;
   text-align: left;

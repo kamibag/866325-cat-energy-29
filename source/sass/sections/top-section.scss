@@ -23,7 +23,7 @@
 
   @media (width >= $tablet-min-width) {
     position: relative;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 0 120px 526px;
   }
 
@@ -159,13 +159,21 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to bottom, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/slider-cat-mobile-2x.jpg");
+  }
+
   @media (width >= $desktop-min-width) {
     width: 100%;
     height: 100%;
     grid-column: 2;
     grid-row: 1;
-    background-image: linear-gradient(to top, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/slider-cat-desktop.jpg");
+    background-image: linear-gradient(to bottom, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/slider-cat-desktop.jpg");
     background-position: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/slider-cat-desktop-2x.jpg");
+    }
   }
 }
 

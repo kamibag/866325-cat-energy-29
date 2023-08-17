@@ -55,8 +55,6 @@
 
 .card-product__icon-show-all {
   align-self: end;
-  //padding: 0;
-  //margin-bottom: 23px;
   width: 30px;
   height: 30px;
   background-image: url("../img/icons/show-all-mobile.svg");
@@ -65,7 +63,6 @@
   background-size: 100%;
 
   @media (width >= $tablet-min-width) {
-    //margin-bottom: 50px;
     width: 60px;
     height: 60px;
     background-image: url("../img/icons/show-all-tablet.svg");
@@ -74,12 +71,6 @@
   @media (width >= $desktop-min-width) {
     margin-bottom: 40px;
   }
-}
-
-.card-product__about {
-  //align-self: stretch;
-  //display: flex;
-  //flex-direction: column;
 }
 
 .card-product__title {
@@ -126,7 +117,6 @@
   display: grid;
   grid-template-columns: 1fr;
   margin: 10px 0;
-  font-family: $primary-font-family;
   font-size: 12px;
   line-height: 16px;
   color: $primary-text-color;
@@ -155,7 +145,6 @@
 .card-product__description {
   align-self: start;
   margin: 10px 0;
-  font-family: $primary-font-family;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
