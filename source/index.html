@@ -15,7 +15,11 @@
   <div class="header__container container">
     <div class="header__logo-wrapper">
       <div class="header__logo-item">
-        <div class="header__logo"></div>
+        <picture>
+          <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
+          <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="header__logo" src="img/icons/logo-mobile.svg" width="33" height="38">
+        </picture>
       </div>
       <div class="header__logo-item header__logo-item--second">
         <div class="header__logo-text"></div>
