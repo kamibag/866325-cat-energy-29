@@ -149,13 +149,14 @@
 
   @media (width >= $tablet-min-width) {
     margin: 0;
-    justify-self: start;
+    justify-self: end;
     grid-template-columns: 1fr;
     justify-content: flex-end;
     gap: 9px;
   }
 
   @media (width >= $desktop-min-width) {
+    justify-self: start;
     grid-column: 1;
     grid-row: 4;
     display: flex;
