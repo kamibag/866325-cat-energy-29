@@ -154,26 +154,26 @@
   flex: 1 0 302px;
   width: 100%;
   height: 302px;
-  background-image: linear-gradient(to bottom, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/slider-cat-mobile.jpg");
+  background-image: $primary-linear-gradient,
+    image-set(
+      url("../img/content/slider-cat-mobile.jpg") type("image/jpg") 1dppx,
+      url("../img/content/slider-cat-mobile-2x.jpg") type("image/jpg") 2dppx
+  );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(to bottom, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/slider-cat-mobile-2x.jpg");
-  }
 
   @media (width >= $desktop-min-width) {
     width: 100%;
     height: 100%;
     grid-column: 2;
     grid-row: 1;
-    background-image: linear-gradient(to bottom, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/slider-cat-desktop.jpg");
+    background-image: $primary-linear-gradient,
+      image-set(
+        url("../img/content/slider-cat-desktop.jpg") type("image/jpg") 1dppx,
+        url("../img/content/slider-cat-desktop-2x.jpg") type("image/jpg") 2dppx
+    );
     background-position: left;
-
-    @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../img/content/slider-cat-desktop-2x.jpg");
-    }
   }
 }
 
