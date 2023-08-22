@@ -3,7 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='icon' href='favicon.ico'>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +15,11 @@
   <div class="header__container container">
     <div class="header__logo-wrapper">
       <div class="header__logo-item">
-        <div class="header__logo"></div>
+        <picture>
+          <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
+          <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="header__logo" src="img/icons/logo-mobile.svg" width="33" height="38">
+        </picture>
       </div>
       <div class="header__logo-item header__logo-item--second">
         <div class="header__logo-text"></div>
@@ -137,14 +144,14 @@
         </div>
         <div class="slider__item">
           <picture>
-            <source srcset="img/content/thick-cat-tablet.png" media="(min-width: 768px)">
-            <img class="slider__image slider__image--left" src="img/content/thick-cat-mobile.png" width="280" height="256" alt="Кот до">
+            <source srcset="img/content/thick-cat-tablet.png, img/content/thick-cat-tablet-2x.png 2x" media="(min-width: 768px)">
+            <img class="slider__image slider__image--left" src="img/content/thick-cat-mobile.png" srcset="img/content/thick-cat-mobile-2x.png 2x" width="280" height="256" alt="Кот до">
           </picture>
         </div>
         <div class="slider__item">
           <picture>
-            <source srcset="img/content/thin-cat-tablet.png" media="(min-width: 768px)">
-            <img class="slider__image slider__image--right" src="img/content/thin-cat-mobile.png" width="280" height="256" alt="Кот после">
+            <source srcset="img/content/thin-cat-tablet.png, img/content/thin-cat-tablet-2x.png 2x" media="(min-width: 768px)">
+            <img class="slider__image slider__image--right" src="img/content/thin-cat-mobile.png" srcset="img/content/thin-cat-mobile-2x.png 2x" width="280" height="256" alt="Кот после">
           </picture>
         </div>
       </div>
