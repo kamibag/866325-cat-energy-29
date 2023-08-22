@@ -25,46 +25,20 @@
   &:active {
     opacity: 0.3;
   }
+}
 
-  &--vk {
-    display: block;
-    width: 28px;
-    height: 22px;
-    background-image: url("../img/icons/vkontakte.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+.social__link-icon {
+  fill: $slide-bar-color;
 
-    &:hover {
-      background-image: url("../img/icons/vkontakte-hover.svg");
-    }
+  &:hover {
+    fill: $primary-color;
   }
+}
 
-  &--youtube {
-    display: block;
-    width: 28px;
-    height: 22px;
-    background-image: url("../img/icons/youtube.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+.html-academy__icon {
+  fill: $slide-bar-color;
 
-    &:hover {
-      background-image: url("../img/icons/youtube-hover.svg");
-    }
-  }
-
-  &--telegram {
-    display: block;
-    width: 28px;
-    height: 22px;
-    background-image: url("../img/icons/telegram.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-
-    &:hover {
-      background-image: url("../img/icons/telegram-hover.svg");
-    }
+  &:hover {
+    fill: $primary-color;
   }
 }

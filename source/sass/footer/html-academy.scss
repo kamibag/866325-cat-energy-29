@@ -24,29 +24,20 @@
     justify-content: flex-end;
   }
 
+  &:hover .html-academy__icon {
+    fill: $primary-color;
+  }
+
   &:active {
     opacity: 0.3;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    width: 27px;
-    height: 34px;
-    background-image: url("../img/icons/html-academy.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-  }
-
-  &:hover {
-    &::after {
-      background-image: url("../img/icons/html-academy-hover.svg");
-    }
   }
 }
 
 .html-academy__text {
   line-height: 20px;
   color: $primary-text-color;
+}
+
+.html-academy__icon {
+  fill: $slide-bar-color;
 }
