@@ -77,10 +77,6 @@
   display: block;
   width: 101px;
   height: 18px;
-  background-image: url("../img/icons/text-logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
 
   @media (width >= $tablet-min-width) {
     width: 119px;
