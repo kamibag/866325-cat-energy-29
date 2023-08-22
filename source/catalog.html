@@ -225,7 +225,11 @@
         </li>
         <li class="catalog__item card-product card-product--show-all">
           <div class="card-product__image-wrapper card-product__image-wrapper--show-all">
-            <div class="card-product__icon-show-all"></div>
+            <div class="card-product__icon-container">
+              <svg class="card-product__icon-show-all" width="60" height="60">
+                <use xlink:href="img/sprite.svg#show-all"></use>
+              </svg>
+            </div>
           </div>
           <h3 class="card-product__title card-product__title--show-all">Показать еще 100500 товаров</h3>
           <p class="card-product__description">На самом деле вкусов гораздо больше!</p>
@@ -275,7 +279,9 @@
           </li>
         </ul>
         <div class="additional-goods__present-container">
-          <img class="additional-goods__present-image" src="img/icons/gift.svg" alt="Иконка подарка" width="78" height="81">
+          <svg class="additional-goods__present-icon" width="78" height="81">
+            <use xlink:href="img/sprite.svg#present"></use>
+          </svg>
           <p class="additional-goods__present-text">Закажите всё и получите чехол для кота в подарок!</p>
         </div>
       </div>
