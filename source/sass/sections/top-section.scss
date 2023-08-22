@@ -156,6 +156,8 @@
   height: 302px;
   background-image: $primary-linear-gradient,
     image-set(
+      url("../img/content/slider-cat-mobile.webp") type("image/webp") 1dppx,
+      url("../img/content/slider-cat-mobile-2x.webp") type("image/webp") 2dppx,
       url("../img/content/slider-cat-mobile.jpg") type("image/jpg") 1dppx,
       url("../img/content/slider-cat-mobile-2x.jpg") type("image/jpg") 2dppx
   );
@@ -170,6 +172,8 @@
     grid-row: 1;
     background-image: $primary-linear-gradient,
       image-set(
+        url("../img/content/slider-cat-desktop.webp") type("image/webp") 1dppx,
+        url("../img/content/slider-cat-desktop-2x.webp") type("image/webp") 2dppx,
         url("../img/content/slider-cat-desktop.jpg") type("image/jpg") 1dppx,
         url("../img/content/slider-cat-desktop-2x.jpg") type("image/jpg") 2dppx
     );
