@@ -55,7 +55,6 @@
   <section class="main__catalog catalog">
     <div class="catalog__container">
       <h1 class="catalog__title title-h1">Каталог продукции</h1>
-      <h2 class="visually-hidden">Список продукции</h2>
       <ul class="catalog__list">
         <li class="catalog__item card-product">
           <div class="card-product__image-wrapper">
@@ -227,11 +226,7 @@
         </li>
         <li class="catalog__item card-product card-product--show-all">
           <div class="card-product__image-wrapper card-product__image-wrapper--show-all">
-            <div class="card-product__icon-container">
-              <svg class="card-product__icon-show-all" width="60" height="60">
-                <use xlink:href="img/sprite.svg#show-all"></use>
-              </svg>
-            </div>
+            <div class="card-product__icon"></div>
           </div>
           <h3 class="card-product__title card-product__title--show-all">Показать еще 100500 товаров</h3>
           <p class="card-product__description">На самом деле вкусов гораздо больше!</p>
@@ -280,11 +275,8 @@
             <a class="additional-item__button button" href="form.html">Заказать</a>
           </li>
         </ul>
-        <div class="additional-goods__present-container">
-          <svg class="additional-goods__present-icon" width="78" height="81">
-            <use xlink:href="img/sprite.svg#present"></use>
-          </svg>
-          <p class="additional-goods__present-text">Закажите всё и получите чехол для кота в подарок!</p>
+        <div class="present">
+          <p class="present__text">Закажите всё и получите чехол для кота в подарок!</p>
         </div>
       </div>
     </div>

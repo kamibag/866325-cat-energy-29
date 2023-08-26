@@ -61,7 +61,8 @@
   }
 }
 
-.card-product__icon-container {
+.card-product__icon {
+  position: relative;
   align-self: end;
   display: flex;
   justify-content: center;
@@ -78,10 +79,15 @@
   @media (width >= $desktop-min-width) {
     margin-bottom: 40px;
   }
-}
 
-.card-product__icon-show-all {
-  stroke: $grey-middle;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    mask-image: url("../img/sprite.svg#show-all");
+    background-color: $grey-middle;
+  }
 }
 
 .card-product__title {
