@@ -60,17 +60,12 @@
 }
 
 .contacts__text-wrapper {
-  display: grid;
-  justify-content: flex-start;
-  align-content: start;
   margin: 0;
   line-height: 20px;
   color: $primary-text-color;
 
   @media (width >= $tablet-min-width) {
-    gap: 20px;
     justify-self: end;
-    text-align: right;
   }
 
   @media (width >= $desktop-min-width) {
@@ -79,10 +74,21 @@
 }
 
 .contacts__text {
-  margin: 0;
+  display: block;
 
   @media (width >= $tablet-min-width) {
     width: 157px;
+    text-align: right;
+  }
+
+  @media (width >= $desktop-min-width) {
+    text-align: left;
+  }
+
+  &:not(:last-child) {
+    @media (width >= $tablet-min-width) {
+      margin-bottom: 20px;
+    }
   }
 }
 

@@ -52,8 +52,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  --background-color: #{$primary-color};
-  --front-color: #{$secondary-text-color};
 }
 
 .programs-item__title {
@@ -108,11 +106,16 @@
   justify-self: start;
   grid-column: span 2;
   display: flex;
+  align-items: center;
   gap: 20px;
   text-decoration: none;
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:hover .programs-item__link-arrow::before {
+    transform: translateX(0);
   }
 }
 
@@ -130,10 +133,19 @@
 }
 
 .programs-item__link-arrow {
-  display: flex;
-  align-items: center;
   width: 32px;
   overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 12px;
+    mask-image: url("../img/sprite.svg#arrow");
+    background-color: $special-color;
+    transform: translateX(-8px);
+    transition: transform 0.2s ease-in-out;
+  }
 }
 
 .programs-item__link-icon {
