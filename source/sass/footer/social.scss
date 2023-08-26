@@ -22,23 +22,34 @@
 }
 
 .social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &:active {
     opacity: 0.3;
   }
-}
 
-.social__link-icon {
-  fill: $slide-bar-color;
-
-  &:hover {
-    fill: $primary-color;
+  &::before {
+    content: "";
+    width: 28px;
+    height: 22px;
+    background-color: $grey-dim;
   }
-}
 
-.html-academy__icon {
-  fill: $slide-bar-color;
+  &--vk::before {
+    mask-image: url("../img/sprite.svg#vk");
+  }
 
-  &:hover {
-    fill: $primary-color;
+  &--youtube::before {
+    mask-image: url("../img/sprite.svg#youtube");
+  }
+
+  &--telegram::before {
+    mask-image: url("../img/sprite.svg#telegram");
+  }
+
+  &:hover::before {
+    background-color: $primary-color;
   }
 }

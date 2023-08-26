@@ -24,20 +24,24 @@
     justify-content: flex-end;
   }
 
-  &:hover .html-academy__icon {
-    fill: $primary-color;
-  }
-
   &:active {
     opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask-image: url("../img/sprite.svg#html-academy");
+    background-color: $grey-dim;
+  }
+
+  &:hover::after  {
+    background-color: $primary-color;
   }
 }
 
 .html-academy__text {
   line-height: 20px;
   color: $primary-text-color;
-}
-
-.html-academy__icon {
-  fill: $slide-bar-color;
 }

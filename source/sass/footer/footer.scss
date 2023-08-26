@@ -26,7 +26,7 @@
   }
 }
 
-.footer__logo-text {
+.footer__logo {
   display: block;
   margin: 0 auto 20px;
   text-align: center;
@@ -45,11 +45,5 @@
 
   &[href]:active {
     opacity: 0.6;
-  }
-}
-
-.footer__html-academy {
-  @media (width >= $tablet-min-width) {
-    justify-self: end;
   }
 }
