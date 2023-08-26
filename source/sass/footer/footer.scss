@@ -26,16 +26,12 @@
   }
 }
 
-.footer__logo-text {
+.footer__logo {
   display: block;
   margin: 0 auto 20px;
   text-align: center;
   width: 128px;
   height: 24px;
-  background-image: url("../img/icons/footer-logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
 
   @media (width >= $tablet-min-width) {
     margin: 0;
@@ -49,11 +45,5 @@
 
   &[href]:active {
     opacity: 0.6;
-  }
-}
-
-.footer__html-academy {
-  @media (width >= $tablet-min-width) {
-    justify-self: end;
   }
 }

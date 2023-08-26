@@ -30,19 +30,14 @@
 
   &::after {
     content: "";
-    display: block;
     width: 27px;
     height: 34px;
-    background-image: url("../img/icons/html-academy.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+    mask-image: url("../img/sprite.svg#html-academy");
+    background-color: $grey-dim;
   }
 
-  &:hover {
-    &::after {
-      background-image: url("../img/icons/html-academy-hover.svg");
-    }
+  &:hover::after {
+    background-color: $primary-color;
   }
 }
 

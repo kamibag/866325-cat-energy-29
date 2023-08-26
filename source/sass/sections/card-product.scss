@@ -48,7 +48,9 @@
   }
 
   &--show-all {
-    margin-top: -82px;
+    @media (width >= $tablet-min-width) {
+      margin-top: -82px;
+    }
   }
 }
 
@@ -59,23 +61,32 @@
   }
 }
 
-.card-product__icon-show-all {
+.card-product__icon {
+  position: relative;
   align-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
-  background-image: url("../img/icons/show-all-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  overflow: hidden;
 
   @media (width >= $tablet-min-width) {
     width: 60px;
     height: 60px;
-    background-image: url("../img/icons/show-all-tablet.svg");
   }
 
   @media (width >= $desktop-min-width) {
     margin-bottom: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    mask-image: url("../img/sprite.svg#show-all");
+    background-color: $grey-middle;
   }
 }
 

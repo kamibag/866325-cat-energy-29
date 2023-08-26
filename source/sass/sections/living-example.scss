@@ -28,7 +28,7 @@
 
   @media (width >= $tablet-min-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0 224px;
+    gap: 0 167px;
   }
 }
 
@@ -138,49 +138,48 @@
 }
 
 .living-example__price {
-  margin: 0 0 20px;
-  justify-self: center;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: $secondary-text-color;
   gap: 2px;
 
   @media (width >= $tablet-min-width) {
-    margin: 0;
-    justify-self: start;
-    grid-template-columns: 1fr;
-    justify-content: flex-end;
-    gap: 9px;
+    text-align: right;
   }
 
   @media (width >= $desktop-min-width) {
     grid-column: 1;
     grid-row: 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 63px;
+    text-align: left;
   }
 }
 
 .living-example__price-text {
+  display: inline-block;
   margin: 0;
   font-family: $secondary-font-family;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
 
   @media (width >= $tablet-min-width) {
+    display: block;
     font-size: 20px;
-    justify-self: end;
+  }
+
+  &:not(:last-child) {
+    @media (width >= $tablet-min-width) {
+      margin-bottom: 9px;
+    }
+
+    @media (width >= $desktop-min-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .living-example__slider {
+  margin: 20px 0 0;
   justify-self: center;
 
   @media (width >= $tablet-min-width) {

@@ -18,17 +18,17 @@
         <picture>
           <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
           <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
-          <img class="header__logo" src="img/icons/logo-mobile.svg" width="33" height="38">
+          <img class="header__logo" src="img/icons/logo-mobile.svg" width="33" height="38" alt="Логотип">
         </picture>
       </div>
       <div class="header__logo-item header__logo-item--second">
-        <div class="header__logo-text"></div>
+        <img class="header__logo-text" src="img/icons/text-logo.svg" width="101" height="18" alt="Логотип">
       </div>
     </div>
     <nav class="header__nav nav nav--closed nav--no-js">
-      <div class="nav__button-wrapper">
-        <button class="nav__button" type="button" aria-label="Открыть меню"></button>
-      </div>
+      <button class="nav__button" type="button" aria-label="Открыть меню">
+        <span class="nav__button-icon"></span>
+      </button>
       <div class="nav__inner">
         <ul class="nav__list">
           <li class="nav__item">
@@ -52,16 +52,12 @@
       <p class="top-section__subtitle">Занялся собой? Займись котом!</p>
       <div class="top-section__image-wrapper">
         <picture>
-          <source srcset="img/content/index-cat-desktop.png" media="(min-width: 1440px)">
-          <source srcset="img/content/index-cat-tablet.png" media="(min-width: 768px)">
-          <img class="top-section__image" src="img/content/index-cat-mobile.png" alt="Еда" width="280" height="270">
+          <source srcset="img/content/index-cat-desktop.png, img/content/index-cat-desktop-2x.png 2x" media="(min-width: 1440px)">
+          <source srcset="img/content/index-cat-tablet.png, img/content/index-cat-tablet-2x.png 2x" media="(min-width: 768px)">
+          <img class="top-section__image" src="img/content/index-cat-mobile.png" srcset="img/content/index-cat-mobile-2x.png 2x" alt="Еда" width="280" height="270">
         </picture>
       </div>
       <a class="top-section__link button" href="form.html">Подобрать программу</a>
-    </div>
-    <div class="top-section__background-wrapper">
-      <div class="top-section__background-image"></div>
-      <div class="top-section__background-color"></div>
     </div>
   </section>
   <section class="main__programs programs">
@@ -70,28 +66,28 @@
       <ul class="programs__list">
         <li class="programs__item programs-item">
           <div class="programs-item__icon-wrapper">
-            <img class="programs-item__icon" src="img/icons/cat-back-slim.svg" width="50" height="53" alt="">
+            <svg class="programs-item__icon" width="50" height="53">
+              <use xlink:href="img/sprite.svg#cat-back-slim"></use>
+            </svg>
           </div>
           <h3 class="programs-item__title">Похудение</h3>
           <p class="programs-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="programs-item__link" href="catalog.html">
             <span class="programs-item__link-text">Каталог Slim</span>
-            <span class="programs-item__link-arrow">
-              <img class="programs-item__link-icon" src="img/icons/arrow.svg" width="32" height="12" alt="Иконка стрелки">
-            </span>
+            <span class="programs-item__link-arrow"></span>
           </a>
         </li>
         <li class="programs__item programs-item">
           <div class="programs-item__icon-wrapper">
-            <img class="programs-item__icon" src="img/icons/cat-back-pro.svg" width="67" height="50" alt="">
+            <svg class="programs-item__icon" width="67" height="50">
+              <use xlink:href="img/sprite.svg#cat-back-pro"></use>
+            </svg>
           </div>
           <h3 class="programs-item__title">Набор массы</h3>
           <p class="programs-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="programs-item__link" href="catalog.html">
             <span class="programs-item__link-text">Каталог Pro</span>
-            <span class="programs-item__link-arrow">
-              <img class="programs-item__link-icon" src="img/icons/arrow.svg" width="32" height="12" alt="Иконка стрелки">
-            </span>
+            <span class="programs-item__link-arrow"></span>
           </a>
         </li>
       </ul>
@@ -101,16 +97,20 @@
     <div class="how-works__container container">
       <h2 class="how-works__title title-h1">Как это работает</h2>
       <ul class="how-works__list">
-        <li class="how-works__item how-works__item--leaf">
+        <li class="how-works__item">
+          <div class="how-works__icon how-works__icon--leaf"></div>
           <p class="how-works__description">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
-        <li class="how-works__item how-works__item--powder">
+        <li class="how-works__item">
+          <div class="how-works__icon how-works__icon--powder"></div>
           <p class="how-works__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
-        <li class="how-works__item how-works__item--eat">
+        <li class="how-works__item">
+          <div class="how-works__icon how-works__icon--eat"></div>
           <p class="how-works__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
-        <li class="how-works__item how-works__item--clock">
+        <li class="how-works__item">
+          <div class="how-works__icon how-works__icon--clock"></div>
           <p class="how-works__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
@@ -144,6 +144,8 @@
         </div>
         <div class="slider__item">
           <picture>
+            <source type="image/webp" srcset="img/content/thick-cat-tablet.webp, img/content/thick-cat-tablet-2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/content/thick-cat-mobile.webp, img/content/thick-cat-mobile-2x.webp 2x">
             <source srcset="img/content/thick-cat-tablet.png, img/content/thick-cat-tablet-2x.png 2x" media="(min-width: 768px)">
             <img class="slider__image slider__image--left" src="img/content/thick-cat-mobile.png" srcset="img/content/thick-cat-mobile-2x.png 2x" width="280" height="256" alt="Кот до">
           </picture>
@@ -171,33 +173,35 @@
     <div class="contacts__map-wrapper">
       <iframe class="contacts__map-iframe contacts__map-iframe--no-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728633!2d30.320472477571876!3d59.93871647491507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1691783648602!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <picture class="contacts__map-picture contacts__map-picture--no-js">
-        <source srcset="img/content/contacts-desktop.png" media="(min-width: 1440px)">
-        <source srcset="img/content/contacts-tablet.png" media="(min-width: 768px)">
-        <img class="contacts__map" src="img/content/contacts-mobile.png" width="320" height="362" alt="Карта">
+        <source srcset="img/content/contacts-desktop.png, img/content/contacts-desktop-2x.png 2x" media="(min-width: 1440px)">
+        <source srcset="img/content/contacts-tablet.png, img/content/contacts-tablet-2x.png 2x" media="(min-width: 768px)">
+        <img class="contacts__map" src="img/content/contacts-mobile.png" srcset="img/content/contacts-mobile-2x.png 2x" width="320" height="362" alt="Карта">
       </picture>
     </div>
   </section>
 </main>
 <footer class="footer">
   <div class="footer__container container">
-    <div class="footer__item">
-      <a class="footer__logo-text" href="#"></a>
+    <div class="footer__logo-wrapper">
+      <a class="footer__logo" href="#">
+        <img src="img/icons/footer-logo.svg" width="128" height="24" alt="Логотип">
+      </a>
     </div>
-    <div class="footer__item social">
+    <div class="social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" title="Мы в Вконтакте"></a>
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" title="Мы в Вконтакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" title="Мы в Youtube"></a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" title="Мы в Youtube"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" title="Мы в Телеграм"></a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank" title="Мы в Телеграм"></a>
         </li>
       </ul>
     </div>
-    <div class="footer__item html-academy">
-      <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+    <div class="html-academy">
+      <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Онлайн‑курс HTML и CSS. Адаптивная вёрстка и автоматизация">
         <span class="html-academy__text">HTML Academy</span>
       </a>
     </div>

@@ -77,50 +77,6 @@
       text-transform: uppercase;
     }
   }
-
-  &--leaf,
-  &--powder,
-  &--eat,
-  &--clock {
-    &::before {
-      content: "";
-      width: 60px;
-      height: 60px;
-      background-color: $primary-color;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 30px 32px;
-
-      @media (width >= $tablet-min-width) {
-        width: 80px;
-        height: 80px;
-      }
-    }
-  }
-
-  &--leaf {
-    &::before {
-      background-image: url("../img/icons/leaf.svg");
-    }
-  }
-
-  &--powder {
-    &::before {
-      background-image: url("../img/icons/powder.svg");
-    }
-  }
-
-  &--eat {
-    &::before {
-      background-image: url("../img/icons/eat.svg");
-    }
-  }
-
-  &--clock {
-    &::before {
-      background-image: url("../img/icons/clock.svg");
-    }
-  }
 }
 
 .how-works__description {
@@ -130,5 +86,48 @@
 
   @media (width >= $tablet-min-width) {
     line-height: 24px;
+  }
+}
+
+.how-works__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+
+  @media (width >= $tablet-min-width) {
+    width: 80px;
+    height: 80px;
+  }
+
+  &::before {
+    content: "";
+    background-color: $secondary-color;
+  }
+
+  &--leaf::before {
+    width: 25px;
+    height: 28px;
+    mask-image: url("../img/sprite.svg#leaf");
+  }
+
+  &--powder::before {
+    width: 27px;
+    height: 29px;
+    mask-image: url("../img/sprite.svg#powder");
+  }
+
+  &--eat::before {
+    width: 26px;
+    height: 30px;
+    mask-image: url("../img/sprite.svg#eat");
+  }
+
+  &--clock::before {
+    width: 27px;
+    height: 31px;
+    mask-image: url("../img/sprite.svg#clock");
   }
 }
