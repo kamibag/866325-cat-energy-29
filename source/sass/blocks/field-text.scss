@@ -32,7 +32,7 @@
   text-transform: uppercase;
   border: 1px solid $primary-border-input;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     padding: 11px 20px;
     font-size: 20px;
     line-height: normal;
@@ -68,7 +68,7 @@
     color: $primary-text-color;
     opacity: 0.7;
 
-    @media (width >= $tablet-min-width) {
+    @media (min-width: $tablet-min-width) {
       font-size: 20px;
       line-height: normal;
     }
@@ -89,7 +89,7 @@
   color: $primary-text-color;
   text-transform: uppercase;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     font-size: 20px;
     line-height: normal;
   }

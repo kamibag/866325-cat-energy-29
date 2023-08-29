@@ -5,7 +5,7 @@
   justify-content: stretch;
   padding: 20px 0 0;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     justify-content: flex-end;
     padding: 0;
   }
@@ -18,7 +18,7 @@
   align-items: center;
   text-decoration: none;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     width: auto;
     gap: 23px;
     justify-content: flex-end;

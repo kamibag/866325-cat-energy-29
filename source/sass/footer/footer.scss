@@ -7,11 +7,11 @@
   padding: 40px 0;
   background: $secondary-bg-color;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     padding: 55px 0;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     padding: 66px 0;
   }
 }
@@ -21,7 +21,7 @@
   align-items: center;
   width: 100%;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -33,7 +33,7 @@
   width: 128px;
   height: 24px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin: 0;
     padding: 0;
     justify-self: start;

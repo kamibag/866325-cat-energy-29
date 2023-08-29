@@ -20,7 +20,7 @@
   text-transform: uppercase;
   user-select: none;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     font-size: 20px;
     line-height: 30px;
     padding: 6px 0 6px 60px;
@@ -42,7 +42,7 @@
     border: 1px solid $main-border-color;
     border-radius: 50%;
 
-    @media (width >= $tablet-min-width) {
+    @media (min-width: $tablet-min-width) {
       top: calc(50% - 20px);
       width: 40px;
       height: 40px;

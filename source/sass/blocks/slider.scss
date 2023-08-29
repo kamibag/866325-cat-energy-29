@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(2, 140px);
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     grid-template-columns: repeat(2, 280px);
   }
 }
@@ -16,7 +16,7 @@
   height: 256px;
   overflow: hidden;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     height: 512px;
   }
 }
@@ -24,7 +24,7 @@
 .slider__image {
   position: absolute;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     width: 560px;
     height: 512px;
   }
@@ -55,7 +55,7 @@
     border-color: $button-hover-color;
   }
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     height: 512px;
   }
 }

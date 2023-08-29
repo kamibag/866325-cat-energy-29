@@ -13,7 +13,7 @@
   color: $primary-text-color;
   background: $primary-bg-color;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     font-size: 16px;
   }
 }

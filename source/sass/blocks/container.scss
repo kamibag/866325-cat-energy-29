@@ -5,21 +5,21 @@
   padding: 0 20px;
   width: 100%;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     padding: 0 30px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     padding: 0;
     max-width: 1220px;
   }
 
   &--narrow {
-    @media (width >= $tablet-min-width) {
+    @media (min-width: $tablet-min-width) {
       padding: 0 70px;
     }
 
-    @media (width >= $desktop-min-width) {
+    @media (min-width: $desktop-min-width) {
       padding: 0;
     }
   }

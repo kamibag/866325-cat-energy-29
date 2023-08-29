@@ -12,7 +12,7 @@
 }
 
 .contacts__wrapper {
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     position: absolute;
     height: 400px;
     display: flex;
@@ -30,11 +30,11 @@
   padding: 26px 0;
   width: 100%;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     padding: 60px 0;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     position: relative;
     width: auto;
     gap: 0 87px;
@@ -52,7 +52,7 @@
   text-transform: uppercase;
   color: $grey-darker;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     width: 163px;
     font-size: 20px;
     line-height: 26px;
@@ -64,11 +64,11 @@
   line-height: 20px;
   color: $primary-text-color;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     justify-self: end;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     text-align: left;
   }
 }
@@ -76,17 +76,17 @@
 .contacts__text {
   display: block;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     width: 157px;
     text-align: right;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     text-align: left;
   }
 
   &:not(:last-child) {
-    @media (width >= $tablet-min-width) {
+    @media (min-width: $tablet-min-width) {
       margin-bottom: 20px;
     }
   }
@@ -96,7 +96,7 @@
   width: 100%;
   height: 362px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     height: 400px;
   }
 }

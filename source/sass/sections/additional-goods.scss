@@ -7,7 +7,7 @@
 .additional-goods__inner {
   width: 100%;
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
@@ -19,7 +19,7 @@
   margin-top: 0;
   margin-bottom: 36px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin-bottom: 80px;
     grid-column: span 2;
   }
@@ -32,11 +32,11 @@
   padding: 0;
   list-style: none;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin-bottom: 70px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin-bottom: 0;
   }
 }

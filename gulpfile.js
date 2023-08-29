@@ -9,39 +9,41 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import replace from 'gulp-replace';
+import { stacksvg } from 'gulp-stacksvg';
 
 // Styles
-
 export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
+  return gulp.src('source/sass/style.scss', {sourcemaps: true})
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('build/css', {sourcemaps: '.'}))
     .pipe(browser.stream());
-}
-
-// HTML
-
-const html = () => {
-  return gulp.src('source/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('build'));
 }
 
 // Scripts
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
+}
+
+// HTML
+const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(replace('.css', '.min.css'))
+    .pipe(replace('.js', '.min.js'))
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('build'));
 }
 
 // Images
@@ -67,25 +69,23 @@ const createWebp = () => {
 
 // SVG
 const svg = () =>
-  gulp.src(['source/img/*.svg', '!source/img/sprites/*.svg'])
+  gulp.src(['source/img/**/*.svg', '!source/img/sprites/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
+export const stack = () => {
   return gulp.src('source/img/sprites/*.svg')
     .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
+    .pipe(stacksvg({output: 'sprite.svg'}))
     .pipe(gulp.dest('build/img'));
 }
 
 // Copy
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{woff2,woff}',
+    'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
+    'source/*.webmanifest',
   ], {
     base: 'source'
   })
@@ -99,7 +99,6 @@ const clean = () => {
 };
 
 // Server
-
 const server = (done) => {
   browser.init({
     server: {
@@ -113,14 +112,12 @@ const server = (done) => {
 }
 
 // Reload
-
 const reload = (done) => {
   browser.reload();
   done();
 }
 
 // Watcher
-
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts));
@@ -137,9 +134,9 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite,
+    stack,
     createWebp
-  ),
+  )
 );
 
 // Default
@@ -152,10 +149,11 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    sprite,
+    stack,
     createWebp
   ),
   gulp.series(
     server,
     watcher
-  ));
+  )
+);
