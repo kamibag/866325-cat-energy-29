@@ -78,6 +78,8 @@
 
   @media (min-width: $tablet-min-width) {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     gap: 33px;
   }
 }
@@ -155,7 +157,7 @@
   }
 }
 
-@media (max-width: $tablet-min-width) {
+@media (max-width: calc($tablet-min-width - 1px)) {
   .nav--no-js .nav__button-wrapper {
     display: none;
   }
