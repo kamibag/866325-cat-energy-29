@@ -109,6 +109,7 @@
   align-items: center;
   gap: 20px;
   text-decoration: none;
+  color: $secondary-text-color;
 
   &:active {
     opacity: 0.3;
@@ -125,7 +126,6 @@
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  color: $secondary-text-color;
 
   @media (min-width: $tablet-min-width) {
     font-size: 20px;
@@ -142,19 +142,8 @@
     width: 32px;
     height: 12px;
     mask-image: url("../img/sprite.svg#arrow");
-    background-color: $special-color;
+    background-color: currentColor;
     transform: translateX(-8px);
     transition: transform 0.2s ease-in-out;
   }
-}
-
-.programs-item__link-icon {
-  position: relative;
-  right: 8px;
-  transition: transform 0.2s ease-in-out;
-}
-
-
-.programs-item__link:hover .programs-item__link-icon {
-  transform: translateX(7px);
 }
