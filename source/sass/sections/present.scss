@@ -2,14 +2,16 @@
 
 .present {
   display: grid;
-  grid-template-columns: 1fr;
   justify-content: center;
   justify-items: center;
   align-items: center;
   gap: 48px;
   padding: 58px 61px 43px 58px;
+  color: $secondary-color;
   background-image: $primary-linear-gradient,
     image-set(
+      url("../img/content/present-mobile.webp") type("image/webp") 1dppx,
+      url("../img/content/present-mobile@2x.webp") type("image/webp") 2dppx,
       url("../img/content/present-mobile.jpg") type("image/jpg") 1dppx,
       url("../img/content/present-mobile-2x.jpg") type("image/jpg") 2dppx
   );
@@ -23,6 +25,8 @@
     padding: 57px 125px 60px 77px;
     background-image: $primary-linear-gradient,
       image-set(
+        url("../img/content/present-tablet.webp") type("image/webp") 1dppx,
+        url("../img/content/present-tablet@2x.webp") type("image/webp") 2dppx,
         url("../img/content/present-tablet.jpg") type("image/jpg") 1dppx,
         url("../img/content/present-tablet-2x.jpg") type("image/jpg") 2dppx
     );
@@ -35,6 +39,8 @@
     padding: 56px 42px 43px;
     background-image: $primary-linear-gradient,
       image-set(
+        url("../img/content/present-desktop.webp") type("image/webp") 1dppx,
+        url("../img/content/present-desktop@2x.webp") type("image/webp") 2dppx,
         url("../img/content/present-desktop.jpg") type("image/jpg") 1dppx,
         url("../img/content/present-desktop-2x.jpg") type("image/jpg") 2dppx
     );
@@ -43,17 +49,28 @@
   &::before {
     content: "";
     width: 78px;
-    height: 81px;
+    height: 80px;
     mask-image: url("../img/sprite.svg#present");
-    background-color: $secondary-color;
+    background-color: currentColor;
+
+    @media (min-width: $tablet-min-width) {
+      width: 80px;
+      height: 83px;
+    }
   }
 }
 
 .present__text {
   margin: 0;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
   text-align: center;
-  color: $secondary-color;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-min-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    text-align: center;
+  }
 }
