@@ -5,11 +5,11 @@
 
   @media (min-width: $tablet-min-width) {
     border-bottom: none;
-    padding: 25px 0 0;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-min-width) {
-    padding: 56px 0 0;
+    padding-top: 56px;
   }
 
   &--index {
@@ -24,6 +24,7 @@
 
   @media (min-width: $tablet-min-width) {
     grid-template-columns: auto 1fr;
+    gap: 20px;
   }
 }
 
@@ -32,7 +33,7 @@
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  padding: 13px 0 15px;
+  padding: 13px 0 14px;
 
   @media (min-width: $tablet-min-width) {
     display: flex;
@@ -78,8 +79,8 @@
   width: 101px;
   height: 18px;
 
-  @media (min-width: $tablet-min-width) {
-    width: 119px;
+  @media (min-width: $desktop-min-width) {
+    width: 118px;
     height: 21px;
   }
 
