@@ -6,7 +6,7 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  padding: 20px 20px 25px;
+  padding: 21px 20px 24px;
   border-top: 1px solid $grey-lighter;
 
   @media (min-width: $tablet-min-width) {
@@ -15,20 +15,17 @@
     grid-template-rows: auto auto 1fr auto;
     align-content: end;
     padding: 0 37px 40px;
-    background-image: linear-gradient(to bottom, transparent 90px, $secondary-bg-color 90px);
+    background-image: linear-gradient(to bottom, transparent 81px, $secondary-bg-color 81px);
     border: 0;
-  }
-
-  &:last-child {
-    border-bottom: 1px solid $grey-lighter;
   }
 
   &--show-all {
     grid-template-columns: 1fr;
     justify-items: center;
+    border-bottom: 1px solid $grey-lighter;
 
     @media (min-width: $tablet-min-width) {
-      margin-top: 82px;
+      margin-top: 81px;
       border: 1px solid $secondary-bg-color;
       background: transparent;
     }
@@ -36,29 +33,41 @@
 }
 
 .card-product__image-wrapper {
-  justify-self: center;
   grid-row: span 2;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100px;
 
   @media (min-width: $tablet-min-width) {
     grid-row: 1;
+    margin: 10px 0 22px;
     height: 210px;
   }
 
+  @media (min-width: $desktop-min-width) {
+    margin: 10px 0 12px;
+  }
+
   &--show-all {
+    grid-row: 1;
+    align-items: flex-end;
+    margin: 3px 0 24px;
+
     @media (min-width: $tablet-min-width) {
-      margin-top: -82px;
+      margin: -99px 0 50px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      margin: -60px 0 0;
     }
   }
 }
 
 .card-product__image {
-  @media (min-width: $tablet-min-width) {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .card-product__icon {
@@ -91,8 +100,8 @@
 }
 
 .card-product__title {
-  margin: 10px 0;
-  padding-right: 25px;
+  margin: 0 0 16px;
+  padding-right: 42px;
   font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
@@ -101,7 +110,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-min-width) {
-    margin: 40px 0 20px;
+    margin-bottom: 14px;
     padding: 0 50px;
     font-size: 20px;
     line-height: 24px;
@@ -109,16 +118,18 @@
   }
 
   @media (min-width: $desktop-min-width) {
-    padding: 0 30px;
+    padding: 0 6px;
+    margin-bottom: 20px;
   }
 
   &--show-all {
+    margin-bottom: 9px;
     padding-right: 0;
     text-align: center;
 
     @media (min-width: $tablet-min-width) {
       margin-bottom: 23px;
-      padding: 0;
+      padding: 0 35px;
     }
 
     @media (min-width: $desktop-min-width) {
@@ -132,7 +143,7 @@
   align-self: start;
   display: grid;
   grid-template-columns: 1fr;
-  margin: 10px 0;
+  margin: 0;
   font-size: 12px;
   line-height: 16px;
   color: $primary-text-color;
@@ -148,8 +159,12 @@
   grid-template-columns: repeat(2, 1fr);
 
   @media (min-width: $tablet-min-width) {
-    padding: 5px 0;
+    padding: 5px 0 6px;
     border-bottom: 1px solid $main-border-color;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-bottom: 1px;
   }
 }
 
@@ -167,12 +182,18 @@
   color: $primary-text-color;
 
   @media (min-width: $tablet-min-width) {
+    padding: 0 35px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding: 0;
   }
 }
 
 .card-product__button {
+  margin-top: 19px;
   grid-column: span 2;
   width: 100%;
   font-size: 16px;
@@ -180,14 +201,28 @@
 
   @media (min-width: $tablet-min-width) {
     grid-column: 1;
-    margin: 32px 0 0;
+    margin-top: 32px;
     padding: 10px 20px;
     font-size: 16px;
     line-height: 20px;
   }
 
   &--show-all {
+    margin-top: 20px;
     grid-column: 1;
-    margin: 0;
+    background: $secondary-bg-color;
+    color: $primary-text-color;
+
+    &:hover {
+      background: $grey-lighter;
+    }
+
+    &:active {
+      color: rgba($primary-text-color, 0.3);
+    }
+
+    &:focus {
+      outline: 2px solid $grey-medium;
+    }
   }
 }

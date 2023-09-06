@@ -4,14 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: $tablet-min-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-min-width) {
-    padding: 0 110px;
-  }
 }
 
 .catalog__container {
@@ -28,10 +20,16 @@
 }
 
 .catalog__title {
+  margin: 28px 0 39px;
   padding: 0 20px;
 
   @media (min-width: $tablet-min-width) {
+    margin: 65px 0 84px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-top: 73px;
   }
 }
 
