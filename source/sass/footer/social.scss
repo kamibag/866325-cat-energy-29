@@ -5,7 +5,7 @@
   border-top: 1px solid $grey-light;
   border-bottom: 1px solid $grey-light;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     padding: 0;
     border: 0;
   }

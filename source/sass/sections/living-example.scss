@@ -7,7 +7,7 @@
   background: $special-bg-color;
   padding: 25px 0 40px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     padding: 45px 0 101px;
     background-color: transparent;
     background-image: linear-gradient(to top, rgba($special-bg-color, 0.85) 462px, transparent 462px);
@@ -15,7 +15,7 @@
     background-position: center;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     padding: 0 0 75px;
     background-image: linear-gradient(to bottom, transparent 136px, rgba($special-bg-color, 0.85) 136px);
   }
@@ -26,7 +26,7 @@
   justify-content: center;
   align-items: center;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 0 167px;
   }
@@ -36,13 +36,13 @@
   margin: 0 0 40px;
   line-height: 40px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     grid-column: span 2;
     margin: 0 0 60px;
     line-height: 60px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     grid-column: 1;
     grid-row: 1;
     margin: 0 0 146px;
@@ -54,13 +54,13 @@
   line-height: 18px;
   color: $primary-text-color;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin: 0 0 55px;
     grid-column: span 2;
     line-height: 24px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin: 0 0 69px;
     grid-column: 1;
     grid-row: 2;
@@ -75,13 +75,13 @@
   align-items: center;
   gap: 32px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     justify-self: start;
     grid-template-columns: repeat(2, 162px);
     margin: 0;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin-bottom: 60px;
     grid-column: 1;
     grid-row: 3;
@@ -105,7 +105,7 @@
   border-radius: 3px;
   color: $secondary-text-color;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     font-size: 30px;
     line-height: 37px;
     flex-shrink: 0;
@@ -126,13 +126,13 @@
   color: $primary-text-color;
   background: $special-bg-color;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     font-size: 14px;
     white-space: nowrap;
     background: $secondary-color;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     background: $special-bg-color;
   }
 }
@@ -142,11 +142,11 @@
   color: $secondary-text-color;
   gap: 2px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     text-align: right;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     grid-column: 1;
     grid-row: 4;
     text-align: left;
@@ -162,17 +162,17 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     display: block;
     font-size: 20px;
   }
 
   &:not(:last-child) {
-    @media (width >= $tablet-min-width) {
+    @media (min-width: $tablet-min-width) {
       margin-bottom: 9px;
     }
 
-    @media (width >= $desktop-min-width) {
+    @media (min-width: $desktop-min-width) {
       margin-bottom: 0;
     }
   }
@@ -182,12 +182,12 @@
   margin: 20px 0 0;
   justify-self: center;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin: 104px 0 0;
     grid-column: span 2;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin: 0;
     grid-column: 2;
     grid-row: span 4;
@@ -195,7 +195,7 @@
 }
 
 .living-example__image {
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     width: 560px;
     height: 512px;
   }

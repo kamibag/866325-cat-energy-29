@@ -14,11 +14,11 @@
   padding: 0;
   list-style: none;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     gap: 30px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
   }

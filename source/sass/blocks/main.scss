@@ -4,11 +4,11 @@
   position: relative;
   margin-bottom: 20px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin-bottom: 0;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin-bottom: 82px;
   }
 }
@@ -16,11 +16,11 @@
 .main__programs {
   margin-bottom: 20px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin-bottom: 45px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin-bottom: 71px;
   }
 }
@@ -28,11 +28,11 @@
 .main__how-works {
   margin-bottom: 49px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin-bottom: 0;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin-bottom: 49px;
   }
 }
@@ -40,11 +40,11 @@
 .main__catalog {
   margin-bottom: 25px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin-bottom: 70px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin-bottom: 76px;
   }
 }
@@ -52,11 +52,11 @@
 .main__additional-goods {
   margin-bottom: 35px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin-bottom: 75px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin-bottom: 87px;
   }
 }
@@ -64,11 +64,11 @@
 .main__program-choice {
   margin-bottom: 32px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin-bottom: 60px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin-bottom: 80px;
   }
 }

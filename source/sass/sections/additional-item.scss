@@ -11,14 +11,14 @@
     border-bottom: 1px solid $main-border-color;
   }
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     grid-template-columns: 1fr auto;
     gap: 23px;
     padding: 26px 37px 28px;
     border: 1px solid $main-border-color;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     grid-template-columns: 1fr 1fr 244px;
     gap: 40px;
     padding: 15px 0 17px;
@@ -40,7 +40,7 @@
   color: $grey-dark;
   text-transform: uppercase;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     font-size: 20px;
     margin: 0;
   }
@@ -53,14 +53,14 @@
   line-height: 14px;
   color: $primary-text-color;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     grid-template-columns: repeat(2, auto);
     gap: 0 29px;
     font-size: 16px;
     line-height: 20px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     grid-template-columns: 1fr auto;
   }
 }
@@ -71,17 +71,17 @@
 }
 
 .additional-item__button {
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     grid-column: span 2;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     grid-column: 3;
   }
 }
 
 .additional-goods__prize {
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     align-self: stretch;
   }
 }

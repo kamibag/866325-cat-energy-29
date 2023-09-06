@@ -3,12 +3,12 @@
 .header {
   border-bottom: 1px solid $grey-light;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     border-bottom: none;
     padding: 25px 0 0;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     padding: 56px 0 0;
   }
 
@@ -22,7 +22,7 @@
   grid-template-columns: 1fr;
   align-items: center;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     grid-template-columns: auto 1fr;
   }
 }
@@ -34,7 +34,7 @@
   align-items: center;
   padding: 13px 0 15px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,12 +48,12 @@
   width: 33px;
   height: 38px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     width: 60px;
     height: 50px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     width: 70px;
     height: 59px;
   }
@@ -78,7 +78,7 @@
   width: 101px;
   height: 18px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     width: 119px;
     height: 21px;
   }
@@ -96,7 +96,7 @@
   grid-column: span 3;
   margin: 0 -20px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     justify-self: end;
     grid-column: 2;
     grid-row: 1;

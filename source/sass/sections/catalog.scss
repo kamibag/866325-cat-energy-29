@@ -5,11 +5,11 @@
   justify-content: center;
   align-items: center;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     padding: 0 30px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     padding: 0 110px;
   }
 }
@@ -17,11 +17,11 @@
 .catalog__container {
   width: 100%;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     padding: 0 30px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     padding: 0;
     max-width: 1220px;
   }
@@ -30,7 +30,7 @@
 .catalog__title {
   padding: 0 20px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     padding: 0;
   }
 }
@@ -42,12 +42,12 @@
   padding: 0;
   list-style: none;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 63px 80px;
   }

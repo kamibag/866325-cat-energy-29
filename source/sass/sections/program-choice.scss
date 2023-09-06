@@ -9,11 +9,11 @@
 .program-choice__title {
   margin: 27px 0 37px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin: 65px 0 54px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     grid-column: span 2;
     margin: 74px 0 55px;
   }
@@ -28,14 +28,14 @@
   text-transform: uppercase;
   color: $secondary-text-color;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin-bottom: 66px;
     width: 330px;
     font-size: 20px;
     line-height: 30px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     grid-column: span 2;
   }
 }

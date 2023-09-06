@@ -10,12 +10,12 @@
   padding: 20px;
   background: $secondary-bg-color;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     gap: 0 19px;
     padding: 77px 28px 57px 52px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     gap: 0 47px;
     padding: 41px 61px 55px 52px;
   }
@@ -28,7 +28,7 @@
   width: 67px;
   height: 53px;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     align-self: start;
     grid-column: 2;
     grid-row: span 3;
@@ -39,7 +39,7 @@
     height: 211px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin: 0 0 39px -18px;
     grid-column: 1;
     grid-row: 1;
@@ -65,14 +65,14 @@
   text-transform: uppercase;
   color: $secondary-text-color;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin: 0 0 24px;
     grid-column: 1;
     font-size: 36px;
     line-height: 36px;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     grid-column: 2;
     margin-bottom: 39px;
   }
@@ -87,7 +87,7 @@
   color: $primary-text-color;
   border-bottom: 1px solid $grey-light;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     margin-bottom: 52px;
     padding: 0;
     line-height: 24px;
@@ -96,7 +96,7 @@
     border-bottom: none;
   }
 
-  @media (width >= $desktop-min-width) {
+  @media (min-width: $desktop-min-width) {
     margin-bottom: 27px;
     grid-column: span 2;
   }
@@ -109,6 +109,7 @@
   align-items: center;
   gap: 20px;
   text-decoration: none;
+  color: $secondary-text-color;
 
   &:active {
     opacity: 0.3;
@@ -125,9 +126,8 @@
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  color: $secondary-text-color;
 
-  @media (width >= $tablet-min-width) {
+  @media (min-width: $tablet-min-width) {
     font-size: 20px;
   }
 }
@@ -142,19 +142,8 @@
     width: 32px;
     height: 12px;
     mask-image: url("../img/sprite.svg#arrow");
-    background-color: $special-color;
+    background-color: currentColor;
     transform: translateX(-8px);
     transition: transform 0.2s ease-in-out;
   }
-}
-
-.programs-item__link-icon {
-  position: relative;
-  right: 8px;
-  transition: transform 0.2s ease-in-out;
-}
-
-
-.programs-item__link:hover .programs-item__link-icon {
-  transform: translateX(7px);
 }
