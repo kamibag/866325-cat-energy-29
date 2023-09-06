@@ -49,7 +49,8 @@
     mask-image: url("../img/sprite.svg#telegram");
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:active::before {
     background-color: $primary-color;
   }
 }
