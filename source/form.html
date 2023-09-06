@@ -58,30 +58,30 @@
         <p class="program-choice__text">Заполните анкету, и мы подберём программу питания для вашего кота</p>
         <fieldset class="form__area-input">
           <div class="field-text">
-            <label class="field-text__label" for="name">Имя:*</label>
-            <input class="field-text__input" name="name" id="name" value="Барсик" required>
+            <label class="label" for="name">Имя:*</label>
+            <input class="field-text__input text-input" name="name" id="name" value="Барсик" required>
           </div>
           <div class="field-text">
-            <label class="field-text__label" for="weight">Вес (кг):*</label>
-            <input class="field-text__input" type="number" name="weight" id="weight" value="7" required>
+            <label class="label" for="weight">Вес (кг):*</label>
+            <input class="field-text__input text-input" type="number" name="weight" id="weight" value="7" required>
           </div>
           <div class="field-text">
-            <label class="field-text__label" for="age">Возраст (лет):</label>
-            <input class="field-text__input" type="number" name="age" id="age" value="7">
+            <label class="label" for="age">Возраст (лет):</label>
+            <input class="field-text__input text-input" type="number" name="age" id="age" value="7">
           </div>
         </fieldset>
         <fieldset class="form__area-radio">
           <div class="field-radio">
             <input class="field-radio__input" type="radio" name="program-type" id="weight-loss" value="weight-loss" checked>
-            <label class="field-radio__label" for="weight-loss">Похудение</label>
+            <label class="field-radio__label label" for="weight-loss">Похудение</label>
           </div>
           <div class="field-radio">
             <input class="field-radio__input" type="radio" name="program-type" id="weight-gain" value="weight-gain">
-            <label class="field-radio__label" for="weight-gain">Набор массы</label>
+            <label class="field-radio__label label" for="weight-gain">Набор массы</label>
           </div>
           <div class="field-radio">
             <input class="field-radio__input" type="radio" name="program-type" id="need-advice" value="need-advice">
-            <label class="field-radio__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+            <label class="field-radio__label label" for="need-advice">Не знаю (нужен ваш совет)</label>
           </div>
         </fieldset>
       </div>
@@ -92,21 +92,17 @@
         <div class="form__owner-cat-container container container--narrow container--line">
           <div class="form__area-text">
             <div class="field-text">
-              <label class="field-text__label" for="email">E-mail:*</label>
+              <label class="label" for="email">E-mail:*</label>
               <div class="field-text__input-wrapper">
-                <input class="field-text__input field-text__input--with-icon" type="email" name="email" id="email" value="kuklachev@gmail.com" required>
-                <svg class="field-text__input-logo" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#email"></use>
-                </svg>
+                <input class="field-text__input field-text__input--with-icon text-input" type="email" name="email" id="email" value="kuklachev@gmail.com" required>
+                <div class="field-text__icon field-text__icon--email"></div>
               </div>
             </div>
             <div class="field-text">
-              <label class="field-text__label" for="phone">Телефон:*</label>
+              <label class="label" for="phone">Телефон:*</label>
               <div class="field-text__input-wrapper">
-                <input class="field-text__input field-text__input--with-icon" type="tel" name="phone" id="phone" value="8(960)900-60-90" required>
-                <svg class="field-text__input-logo" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#phone"></use>
-                </svg>
+                <input class="field-text__input field-text__input--with-icon text-input" type="tel" name="phone" id="phone" value="8(960)900-60-90" required>
+                <div class="field-text__icon field-text__icon--phone"></div>
               </div>
             </div>
           </div>
@@ -117,7 +113,7 @@
           <h2 class="title-h2">Комментарий</h2>
         </div>
         <div class="form__comment-container container container--narrow">
-          <textarea class="form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий" rows="5"></textarea>
+          <textarea class="form__textarea text-input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий" rows="5"></textarea>
         </div>
       </fieldset>
       <fieldset class="form__area-additional">
@@ -128,19 +124,19 @@
           <div class="form__area-checkbox">
             <div class="field-checkbox">
               <input class="field-checkbox__input" type="checkbox" name="additionally" id="sugar-substitute" value="sugar-substitute" checked>
-              <label class="field-checkbox__label" for="sugar-substitute">Сахарозаменитель</label>
+              <label class="field-checkbox__label label" for="sugar-substitute">Сахарозаменитель</label>
             </div>
             <div class="field-checkbox">
               <input class="field-checkbox__input" type="checkbox" name="additionally" id="water" value="water">
-              <label class="field-checkbox__label" for="water">Питьевая вода</label>
+              <label class="field-checkbox__label label" for="water">Питьевая вода</label>
             </div>
             <div class="field-checkbox">
               <input class="field-checkbox__input" type="checkbox" name="additionally" id="milk" value="milk">
-              <label class="field-checkbox__label" for="milk">Молоко</label>
+              <label class="field-checkbox__label label" for="milk">Молоко</label>
             </div>
             <div class="field-checkbox">
               <input class="field-checkbox__input" type="checkbox" name="additionally" id="vitamins" value="vitamins">
-              <label class="field-checkbox__label" for="vitamins">Витамины</label>
+              <label class="field-checkbox__label label" for="vitamins">Витамины</label>
             </div>
           </div>
         </div>

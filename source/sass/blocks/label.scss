@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+
+.label {
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}

@@ -7,23 +7,37 @@
 
 .field-radio__input {
   @include visually-hidden();
+
+  &:checked ~ .field-radio__label::before {
+    background-color: $primary-color;
+    background-clip: content-box;
+  }
+
+  &:focus ~ .field-radio__label::before {
+    outline: 1px solid $primary-text-color;
+  }
+
+  &:not(:disabled) ~ .field-radio__label:hover::before {
+    border-color: $grey-medium;
+  }
+
+  &:disabled ~ .field-radio__label {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .field-radio__label:hover {
+    cursor: default;
+  }
 }
 
 .field-radio__label {
-  position: relative;
-  padding: 6px 0 6px 46px;
-  font-family: $secondary-font-family;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  color: $grey-dark;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 15px;
   user-select: none;
 
   @media (min-width: $tablet-min-width) {
-    font-size: 20px;
-    line-height: 30px;
-    padding: 6px 0 6px 60px;
+    gap: 20px;
   }
 
   &:hover {
@@ -32,10 +46,7 @@
 
   &::before {
     content: "";
-    position: absolute;
     display: block;
-    top: calc(50% - 15px);
-    left: 0;
     width: 30px;
     height: 30px;
     padding: 8px;
@@ -49,25 +60,4 @@
       padding: 10px;
     }
   }
-}
-
-.field-radio__input:checked ~ .field-radio__label::before {
-  background-color: $primary-color;
-  background-clip: content-box;
-}
-
-.field-radio__input:focus ~ .field-radio__label::before {
-  outline: 1px solid $primary-text-color;
-}
-
-.field-radio__input:not(:disabled) ~ .field-radio__label:hover::before {
-  border-color: $grey-medium;
-}
-
-.field-radio__input:disabled ~ .field-radio__label {
-  opacity: 0.3;
-}
-
-.field-radio__input:disabled ~ .field-radio__label:hover {
-  cursor: default;
 }
