@@ -73,7 +73,7 @@ const svg = () =>
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-export const stack = () => {
+const stack = () => {
   return gulp.src('source/img/sprites/*.svg')
     .pipe(svgo())
     .pipe(stacksvg({output: 'sprite.svg'}))

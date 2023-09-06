@@ -3,7 +3,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
-    "browser-sync": "2.27.7",
+    "browser-sync": "2.29.3",
     "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
@@ -44,7 +44,10 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "16.13.0"
+    "node": "16.20.2"
   },
-  "type": "module"
+  "type": "module",
+  "volta": {
+    "node": "16.20.2"
+  }
 }

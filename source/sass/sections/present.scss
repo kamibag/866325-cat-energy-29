@@ -11,7 +11,7 @@
   background-image: $primary-linear-gradient,
     image-set(
       url("../img/content/present-mobile.webp") type("image/webp") 1dppx,
-      url("../img/content/present-mobile@2x.webp") type("image/webp") 2dppx,
+      url("../img/content/present-mobile-2x.webp") type("image/webp") 2dppx,
       url("../img/content/present-mobile.jpg") type("image/jpg") 1dppx,
       url("../img/content/present-mobile-2x.jpg") type("image/jpg") 2dppx
   );
@@ -26,7 +26,7 @@
     background-image: $primary-linear-gradient,
       image-set(
         url("../img/content/present-tablet.webp") type("image/webp") 1dppx,
-        url("../img/content/present-tablet@2x.webp") type("image/webp") 2dppx,
+        url("../img/content/present-tablet-2x.webp") type("image/webp") 2dppx,
         url("../img/content/present-tablet.jpg") type("image/jpg") 1dppx,
         url("../img/content/present-tablet-2x.jpg") type("image/jpg") 2dppx
     );
@@ -40,7 +40,7 @@
     background-image: $primary-linear-gradient,
       image-set(
         url("../img/content/present-desktop.webp") type("image/webp") 1dppx,
-        url("../img/content/present-desktop@2x.webp") type("image/webp") 2dppx,
+        url("../img/content/present-desktop-2x.webp") type("image/webp") 2dppx,
         url("../img/content/present-desktop.jpg") type("image/jpg") 1dppx,
         url("../img/content/present-desktop-2x.jpg") type("image/jpg") 2dppx
     );
