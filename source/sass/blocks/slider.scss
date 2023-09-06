@@ -1,6 +1,5 @@
 @use "../base/variables" as *;
 
-
 .slider {
   position: relative;
   display: grid;
@@ -74,8 +73,8 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border: 2px solid $slide-bar-color;
   border-radius: 50%;
   background: $secondary-color;
@@ -88,45 +87,47 @@
   &:active {
     border-color: $button-hover-color;
   }
+
+  &:hover + .slider__control-line {
+    border-color: $primary-color;
+  }
+
+  &:active + .slider__control-line {
+    border-color: $button-hover-color;
+  }
+
+  &:hover > .slider__control-arrow--left {
+    border-right-color: $primary-color;
+  }
+
+  &:hover > .slider__control-arrow--right {
+    border-left-color: $primary-color;
+  }
+
+  &:active > .slider__control-arrow--left {
+    border-right-color: $button-hover-color;
+  }
+
+  &:active > .slider__control-arrow--right {
+    border-left-color: $button-hover-color;
+  }
 }
 
 .slider__control-arrow {
   width: 0;
   height: 0;
 
-  &--left {
+  &--left,
+  &--right {
     border-top: 10px solid transparent;
-    border-right: 10px solid $slide-bar-color;
     border-bottom: 10px solid transparent;
+  }
+
+  &--left {
+    border-right: 10px solid $slide-bar-color;
   }
 
   &--right {
-    border-top: 10px solid transparent;
     border-left: 10px solid $slide-bar-color;
-    border-bottom: 10px solid transparent;
   }
-}
-
-.slider__control-circle:hover + .slider__control-line {
-  border-color: $primary-color;
-}
-
-.slider__control-circle:active + .slider__control-line {
-  border-color: $button-hover-color;
-}
-
-.slider__control-circle:hover > .slider__control-arrow--left {
-  border-right-color: $primary-color;
-}
-
-.slider__control-circle:hover > .slider__control-arrow--right {
-  border-left-color: $primary-color;
-}
-
-.slider__control-circle:active > .slider__control-arrow--left {
-  border-right-color: $button-hover-color;
-}
-
-.slider__control-circle:active > .slider__control-arrow--right {
-  border-left-color: $button-hover-color;
 }

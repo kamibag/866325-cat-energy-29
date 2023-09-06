@@ -6,11 +6,12 @@
   align-items: center;
 
   @media (min-width: $tablet-min-width) {
-    padding: 0 0 47px;
+    padding: 0 0 79px;
     border-bottom: 1px solid $extra-border-color;
   }
 
   @media (min-width: $desktop-min-width) {
+    padding-bottom: 0;
     border: 0;
   }
 }
@@ -20,7 +21,7 @@
   line-height: 40px;
 
   @media (min-width: $tablet-min-width) {
-    margin: 0 0 72px;
+    margin-bottom: 72px;
     line-height: 1;
   }
 }
@@ -37,13 +38,13 @@
     counter-reset: count-item 0;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    gap: 80px 20%;
+    gap: 108px 22%;
     padding-right: 79px;
   }
 
   @media (min-width: $desktop-min-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px 95px;
+    gap: 80px;
     padding-right: 0;
   }
 }
@@ -67,9 +68,8 @@
     @media (min-width: $tablet-min-width) {
       position: absolute;
       z-index: -1;
-      right: 0;
-      top: -40px;
       content: counter(count-item);
+      transform: translateX(85%);
       font-family: $secondary-font-family;
       font-size: 280px;
       line-height: 1;
@@ -77,11 +77,16 @@
       text-transform: uppercase;
     }
   }
+
+  &:first-child::before {
+    @media (min-width: $tablet-min-width) {
+      transform: translateX(113%);
+    }
+  }
 }
 
 .how-works__description {
   margin: 0;
-  line-height: 18px;
   color: $primary-text-color;
 
   @media (min-width: $tablet-min-width) {
@@ -108,8 +113,8 @@
   }
 
   &--leaf::before {
-    width: 25px;
-    height: 28px;
+    width: 30px;
+    height: 32px;
     mask-image: url("../img/sprite.svg#leaf");
   }
 
@@ -120,7 +125,7 @@
   }
 
   &--eat::before {
-    width: 26px;
+    width: 25px;
     height: 30px;
     mask-image: url("../img/sprite.svg#eat");
   }

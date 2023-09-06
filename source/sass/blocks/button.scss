@@ -3,8 +3,8 @@
 .button {
   padding: 10px 20px;
   font-family: $secondary-font-family;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   color: $secondary-color;
   text-transform: uppercase;
@@ -16,7 +16,7 @@
   @media (min-width: $tablet-min-width) {
     padding: 14px 26px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 26px;
   }
 
   &:hover {
@@ -30,22 +30,5 @@
 
   &:focus {
     outline: 2px solid $button-focus-color;
-  }
-
-  &--second {
-    background: $secondary-bg-color;
-    color: $primary-text-color;
-
-    &:hover {
-      background: $grey-lighter;
-    }
-
-    &:active {
-      color: rgba($primary-text-color, 0.3);
-    }
-
-    &:focus {
-      outline: 2px solid $grey-medium;
-    }
   }
 }
