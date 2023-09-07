@@ -53,9 +53,11 @@
     grid-row: 1;
     align-items: flex-end;
     margin: 3px 0 24px;
+    height: auto;
 
     @media (min-width: $tablet-min-width) {
       margin: -99px 0 50px;
+      height: 210px;
     }
 
     @media (min-width: $desktop-min-width) {
@@ -175,7 +177,7 @@
 
 .card-product__description {
   align-self: start;
-  margin: 10px 0;
+  margin: 0;
   font-size: 12px;
   line-height: 16px;
   text-align: center;

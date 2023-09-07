@@ -35,6 +35,7 @@
     grid-row: span 3;
     width: 268px;
     height: 211px;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -122,6 +123,10 @@
   gap: 17px;
   text-decoration: none;
   color: $secondary-text-color;
+
+  @media (min-width: $tablet-min-width) {
+    gap: 26px;
+  }
 
   &:active {
     opacity: 0.3;

@@ -4,6 +4,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  justify-content: center;
 
   @media (min-width: $tablet-min-width) {
     grid-template-columns: repeat(2, 280px);

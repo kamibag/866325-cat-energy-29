@@ -148,8 +148,12 @@
 }
 
 @media (max-width: calc($tablet-min-width - 1px)) {
-  .nav--no-js .nav__button-wrapper {
+  .nav--no-js .nav__button {
     display: none;
+  }
+
+  .nav--opened .nav__button {
+    right: 18px;
   }
 
   .nav--opened .nav__button-icon {

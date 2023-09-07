@@ -78,7 +78,7 @@
     }
   }
 
-  &:first-child::before {
+  &:first-child::after {
     @media (min-width: $tablet-min-width) {
       transform: translateX(113%);
     }

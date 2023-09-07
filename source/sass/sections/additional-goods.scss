@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-min-width) {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 245px;
     align-items: center;
     gap: 0 81px;
   }
@@ -23,17 +23,21 @@
     margin-bottom: 80px;
     grid-column: span 2;
   }
+
+  @media (min-width: $desktop-min-width) {
+    margin-bottom: 79px;
+  }
 }
 
 .additional-goods__list {
   display: grid;
   align-items: stretch;
-  margin: 0 0 35px;
+  margin: 0 0 34px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-min-width) {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-min-width) {

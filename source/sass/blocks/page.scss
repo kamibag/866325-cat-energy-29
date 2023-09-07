@@ -5,6 +5,9 @@
 }
 
 .page__body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
   margin: 0;
   font-family: $primary-font-family;
   font-size: 14px;

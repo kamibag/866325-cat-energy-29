@@ -1,5 +1,9 @@
 @use "../base/variables" as *;
 
+.main {
+  display: grid;
+}
+
 .main__top-section {
   position: relative;
   margin-bottom: 20px;
@@ -45,7 +49,7 @@
   }
 
   @media (min-width: $desktop-min-width) {
-    margin-bottom: 79px;
+    margin-bottom: 77px;
   }
 }
 
