@@ -17,12 +17,11 @@
   }
 
   &:focus {
-    border-color: $primary-text-color;
-    outline: none;
+    outline: 2px solid $primary-text-color;
   }
 
   &:invalid {
-    border-color: $status-error;
+    outline: 2px solid $status-error;
   }
 
   &::placeholder {
