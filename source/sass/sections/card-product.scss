@@ -110,9 +110,19 @@
   }
 }
 
+.card-product__title-link {
+  margin: 0 42px 16px 0;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 0 50px 14px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin: 0 6px 20px;
+  }
+}
+
 .card-product__title {
-  margin: 0 0 16px;
-  padding-right: 42px;
   font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
@@ -121,16 +131,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-min-width) {
-    margin-bottom: 14px;
-    padding: 0 50px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-  }
-
-  @media (min-width: $desktop-min-width) {
-    padding: 0 6px;
-    margin-bottom: 20px;
   }
 
   &--show-all {
