@@ -67,9 +67,10 @@
   &::after {
     @media (min-width: $tablet-min-width) {
       position: absolute;
+      top: 0;
       z-index: -1;
       content: counter(count-item);
-      transform: translateX(85%);
+      transform: translate(85%, -40px);
       font-family: $secondary-font-family;
       font-size: 280px;
       line-height: 1;
@@ -80,7 +81,7 @@
 
   &:first-child::after {
     @media (min-width: $tablet-min-width) {
-      transform: translateX(113%);
+      transform: translate(113%, -40px);
     }
   }
 }

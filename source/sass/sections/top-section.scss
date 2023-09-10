@@ -22,6 +22,7 @@
     z-index: -5;
     width: 100%;
     height: 302px;
+    background-color: $primary-color;
     background-image: $primary-linear-gradient,
       image-set(
         url("../img/content/top-cat-mobile.webp") type("image/webp") 1dppx,
@@ -113,7 +114,7 @@
   }
 }
 
-.top-section__image-wrapper {
+.top-section__picture {
   justify-self: center;
   margin: 0 0 3px;
 

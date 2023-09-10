@@ -1,1 +1,1 @@
-document.querySelector('.contacts__map-iframe').classList.remove('contacts__map-iframe--no-js');
+document.querySelector('.contacts__map').classList.remove('contacts__map--no-js');

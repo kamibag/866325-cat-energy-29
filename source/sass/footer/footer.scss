@@ -37,12 +37,11 @@
 }
 
 .footer__logo {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
-  width: 128px;
-  height: 24px;
-  mask-image: url("../img/sprite.svg#footer-logo");
-  background-color: $grey-darker;
+  fill: $grey-darker;
 
   @media (min-width: $tablet-min-width) {
     margin-bottom: 0;
@@ -50,10 +49,10 @@
 
   &:hover,
   &:focus {
-    background-color: $logo-hover;
+    fill: $logo-hover;
   }
 
   &:active {
-    background-color: $logo-active;
+    fill: $logo-active;
   }
 }
