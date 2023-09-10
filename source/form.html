@@ -52,37 +52,37 @@
   </div>
 </header>
 <main class="main">
-  <section class="main__program-choice program-choice">
+  <section class="main__program-choice">
     <form class="form" id="program">
       <div class="form__container container container--narrow">
         <h1 class="form__title title-h1">Подбор программы</h1>
         <p class="form__description">Заполните анкету, и мы подберём программу питания для вашего кота</p>
         <fieldset class="form__area-input">
-          <div class="field-text">
-            <label class="label" for="program-name">Имя:*</label>
-            <input class="field-text__input text-input" name="name" id="program-name" value="Барсик" required>
+          <div class="form__field-text">
+            <label class="form__label" for="program-name">Имя:*</label>
+            <input class="form__text-input" name="name" id="program-name" value="Барсик" required>
           </div>
-          <div class="field-text">
-            <label class="label" for="program-weight">Вес (кг):*</label>
-            <input class="field-text__input text-input" type="number" name="weight" id="program-weight" value="7" required>
+          <div class="form__field-text">
+            <label class="form__label" for="program-weight">Вес (кг):*</label>
+            <input class="form__text-input" type="number" name="weight" id="program-weight" value="7" required>
           </div>
-          <div class="field-text">
-            <label class="label" for="program-age">Возраст (лет):</label>
-            <input class="field-text__input text-input" type="number" name="age" id="program-age" value="7">
+          <div class="form__field-text">
+            <label class="form__label" for="program-age">Возраст (лет):</label>
+            <input class="form__text-input" type="number" name="age" id="program-age" value="7">
           </div>
         </fieldset>
         <fieldset class="form__area-radio">
-          <div class="field-radio">
-            <input class="field-radio__input" type="radio" name="program-type" id="program-weight-loss" value="weight-loss" checked>
-            <label class="field-radio__label label" for="program-weight-loss">Похудение</label>
+          <div class="form__field-radio">
+            <input class="form__radio-input" type="radio" name="program-type" id="program-weight-loss" value="weight-loss" checked>
+            <label class="form__radio-label form__label" for="program-weight-loss">Похудение</label>
           </div>
-          <div class="field-radio">
-            <input class="field-radio__input" type="radio" name="program-type" id="program-weight-gain" value="weight-gain">
-            <label class="field-radio__label label" for="program-weight-gain">Набор массы</label>
+          <div class="form__field-radio">
+            <input class="form__radio-input" type="radio" name="program-type" id="program-weight-gain" value="weight-gain">
+            <label class="form__radio-label form__label" for="program-weight-gain">Набор массы</label>
           </div>
-          <div class="field-radio">
-            <input class="field-radio__input" type="radio" name="program-type" id="program-need-advice" value="need-advice">
-            <label class="field-radio__label label" for="program-need-advice">Не знаю (нужен ваш совет)</label>
+          <div class="form__field-radio">
+            <input class="form__radio-input" type="radio" name="program-type" id="program-need-advice" value="need-advice">
+            <label class="form__radio-label form__label" for="program-need-advice">Не знаю (нужен ваш совет)</label>
           </div>
         </fieldset>
       </div>
@@ -90,20 +90,20 @@
         <div class="form__title-owner-cat title-container">
           <h2 class="title-h2">Контактные данные (владельца кота)</h2>
         </div>
-        <div class="form__owner-cat-container container container--narrow container--line">
+        <div class="form__owner-cat-container container container--narrow">
           <div class="form__area-text">
-            <div class="field-text">
-              <label class="label" for="program-email">E-mail:*</label>
-              <div class="field-text__input-wrapper">
-                <input class="field-text__input field-text__input--with-icon text-input" type="email" name="email" id="program-email" value="kuklachev@gmail.com" required>
-                <div class="field-text__icon field-text__icon--email"></div>
+            <div class="form__field-text">
+              <label class="form__label" for="program-email">E-mail:*</label>
+              <div class="form__input-text-content">
+                <input class="form__text-input form__text-input--with-icon" type="email" name="email" id="program-email" value="kuklachev@gmail.com" required>
+                <div class="form__text-icon form__text-icon--email"></div>
               </div>
             </div>
-            <div class="field-text">
-              <label class="label" for="program-phone">Телефон:*</label>
-              <div class="field-text__input-wrapper">
-                <input class="field-text__input field-text__input--with-icon text-input" type="tel" name="phone" id="program-phone" value="8 (960) 900-60-90" required>
-                <div class="field-text__icon field-text__icon--phone"></div>
+            <div class="form__field-text">
+              <label class="form__label" for="program-phone">Телефон:*</label>
+              <div class="form__input-text-content">
+                <input class="form__text-input form__text-input--with-icon" type="tel" name="phone" id="program-phone" value="8 (960) 900-60-90" required>
+                <div class="form__text-icon form__text-icon--phone"></div>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@
           <h2 class="title-h2">Комментарий</h2>
         </div>
         <div class="form__comment-container container container--narrow">
-          <textarea class="form__textarea text-input" name="comment" id="program-comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий" rows="5"></textarea>
+          <textarea class="form__text-input form__text-input--textarea" name="comment" id="program-comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий" rows="5"></textarea>
         </div>
       </fieldset>
       <fieldset class="form__area-additional">
@@ -123,21 +123,21 @@
         </div>
         <div class="form__additional-container container container--narrow">
           <div class="form__area-checkbox">
-            <div class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" name="additionally" id="program-sugar-substitute" value="sugar-substitute" checked>
-              <label class="field-checkbox__label label" for="program-sugar-substitute">Сахарозаменитель</label>
+            <div class="form__field-checkbox">
+              <input class="form__checkbox-input" type="checkbox" name="additionally" id="program-sugar-substitute" value="sugar-substitute" checked>
+              <label class="form__checkbox-label form__label" for="program-sugar-substitute">Сахарозаменитель</label>
             </div>
-            <div class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" name="additionally" id="program-water" value="water">
-              <label class="field-checkbox__label label" for="program-water">Питьевая вода</label>
+            <div class="form__field-checkbox">
+              <input class="form__checkbox-input" type="checkbox" name="additionally" id="program-water" value="water">
+              <label class="form__checkbox-label form__label" for="program-water">Питьевая вода</label>
             </div>
-            <div class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" name="additionally" id="program-milk" value="milk">
-              <label class="field-checkbox__label label" for="program-milk">Молоко</label>
+            <div class="form__field-checkbox">
+              <input class="form__checkbox-input" type="checkbox" name="additionally" id="program-milk" value="milk">
+              <label class="form__checkbox-label form__label" for="program-milk">Молоко</label>
             </div>
-            <div class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" name="additionally" id="program-vitamins" value="vitamins">
-              <label class="field-checkbox__label label" for="program-vitamins">Витамины</label>
+            <div class="form__field-checkbox">
+              <input class="form__checkbox-input" type="checkbox" name="additionally" id="program-vitamins" value="vitamins">
+              <label class="form__checkbox-label form__label" for="program-vitamins">Витамины</label>
             </div>
           </div>
         </div>
