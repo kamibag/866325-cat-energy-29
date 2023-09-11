@@ -1,11 +1,11 @@
 @use "../base/variables" as *;
 
 .additional-item {
-  padding: 20px 0;
+  padding: 12px 0 19px;
   display: grid;
-  justify-content: stretch;
   align-items: center;
   border-top: 1px solid $main-border-color;
+  border-bottom: 1px solid $main-border-color;
 
   &:last-child {
     border-bottom: 1px solid $main-border-color;
@@ -21,7 +21,7 @@
   @media (min-width: $desktop-min-width) {
     grid-template-columns: 1fr 1fr 244px;
     gap: 40px;
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
     border: 0;
     border-top: 1px solid $main-border-color;
 
@@ -32,7 +32,7 @@
 }
 
 .additional-item__title {
-  margin: 0 0 10px;
+  margin: 0 0 13px;
   font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
@@ -49,39 +49,37 @@
 .additional-item__characteristics {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 10px 0;
+  align-items: center;
+  margin: 0 0 15px;
   line-height: 14px;
   color: $primary-text-color;
 
   @media (min-width: $tablet-min-width) {
-    grid-template-columns: repeat(2, auto);
-    gap: 0 29px;
-    font-size: 16px;
+    grid-template-columns: 1fr minmax(41px, auto);
+    gap: 0 54px;
+    margin-bottom: -3px;
     line-height: 20px;
-  }
-
-  @media (min-width: $desktop-min-width) {
-    grid-template-columns: 1fr auto;
   }
 }
 
 .additional-item__value {
   justify-self: end;
   margin: 0;
+
+  @media (min-width: $desktop-min-width) {
+    justify-self: start;
+  }
 }
 
 .additional-item__button {
   @media (min-width: $tablet-min-width) {
+    padding: 10px 26px 11px;
+    font-size: 16px;
+    line-height: 20px;
     grid-column: span 2;
   }
 
   @media (min-width: $desktop-min-width) {
     grid-column: 3;
-  }
-}
-
-.additional-goods__prize {
-  @media (min-width: $desktop-min-width) {
-    align-self: stretch;
   }
 }

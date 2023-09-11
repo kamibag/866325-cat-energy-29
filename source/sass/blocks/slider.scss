@@ -1,10 +1,10 @@
 @use "../base/variables" as *;
 
-
 .slider {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  justify-content: center;
 
   @media (min-width: $tablet-min-width) {
     grid-template-columns: repeat(2, 280px);
@@ -42,18 +42,12 @@
   position: absolute;
   left: calc(50% - 20px);
   z-index: 10;
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 40px 1fr;
   justify-content: center;
+  align-items: center;
   width: 40px;
   height: 256px;
-
-  &:hover {
-    border-color: $primary-color;
-  }
-
-  &:active {
-    border-color: $button-hover-color;
-  }
 
   @media (min-width: $tablet-min-width) {
     height: 512px;
@@ -61,21 +55,29 @@
 }
 
 .slider__control-line {
+  justify-self: center;
+  content: "";
   width: 0;
   height: 100%;
   border: 2px solid $slide-bar-color;
-  border-radius: 2px;
+
+  &--top {
+    grid-row: 1;
+    border-radius: 2px 2px 0 0;
+  }
+
+  &--bottom {
+    border-radius: 0 0 2px 2px;
+  }
 }
 
 .slider__control-circle {
-  position: absolute;
-  top: calc(50% - 20px);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border: 2px solid $slide-bar-color;
   border-radius: 50%;
   background: $secondary-color;
@@ -87,46 +89,50 @@
 
   &:active {
     border-color: $button-hover-color;
+    opacity: 0.6;
   }
-}
 
-.slider__control-arrow {
-  width: 0;
-  height: 0;
-
-  &--left {
+  &::before,
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
     border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+
+  &::before {
     border-right: 10px solid $slide-bar-color;
-    border-bottom: 10px solid transparent;
   }
 
-  &--right {
-    border-top: 10px solid transparent;
+  &::after {
     border-left: 10px solid $slide-bar-color;
-    border-bottom: 10px solid transparent;
   }
-}
 
-.slider__control-circle:hover + .slider__control-line {
-  border-color: $primary-color;
-}
+  &:hover ~ .slider__control-line {
+    border-color: $primary-color;
+  }
 
-.slider__control-circle:active + .slider__control-line {
-  border-color: $button-hover-color;
-}
+  &:active ~ .slider__control-line {
+    border-color: $button-hover-color;
+    opacity: 0.6;
+  }
 
-.slider__control-circle:hover > .slider__control-arrow--left {
-  border-right-color: $primary-color;
-}
+  &:hover::before {
+    border-right-color: $primary-color;
+  }
 
-.slider__control-circle:hover > .slider__control-arrow--right {
-  border-left-color: $primary-color;
-}
+  &:hover::after {
+    border-left-color: $primary-color;
+  }
 
-.slider__control-circle:active > .slider__control-arrow--left {
-  border-right-color: $button-hover-color;
-}
+  &:active::before {
+    border-right-color: $button-hover-color;
+    opacity: 0.6;
+  }
 
-.slider__control-circle:active > .slider__control-arrow--right {
-  border-left-color: $button-hover-color;
+  &:active::after {
+    border-left-color: $button-hover-color;
+    opacity: 0.6;
+  }
 }

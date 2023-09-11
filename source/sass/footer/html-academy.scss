@@ -2,12 +2,11 @@
 
 .html-academy {
   display: flex;
-  justify-content: stretch;
   padding: 20px 0 0;
 
   @media (min-width: $tablet-min-width) {
     justify-content: flex-end;
-    padding: 0;
+    padding-top: 0;
   }
 }
 
@@ -16,7 +15,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-decoration: none;
 
   @media (min-width: $tablet-min-width) {
     width: auto;
@@ -36,12 +34,14 @@
     background-color: $grey-dim;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:active::after {
     background-color: $primary-color;
   }
 }
 
 .html-academy__text {
+  font-size: 16px;
   line-height: 20px;
   color: $primary-text-color;
 }

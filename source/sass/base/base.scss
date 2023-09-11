@@ -6,13 +6,23 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --primary-color: #{$primary-color};
   --special-color: #{$special-color};
 }
 
-img {
-  display: block;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
 }
 
 .visually-hidden {

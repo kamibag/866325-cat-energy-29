@@ -18,11 +18,11 @@
   &::after {
     content: "";
     display: block;
-    height: 15px;
+    height: 17px;
     border-bottom: 2px solid $primary-color;
 
     @media (min-width: $tablet-min-width) {
-      height: 20px;
+      height: 23px;
     }
   }
 

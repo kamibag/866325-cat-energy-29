@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
 
 .social {
-  padding: 20px 0;
+  padding: 20px 0 19px;
   border-top: 1px solid $grey-light;
   border-bottom: 1px solid $grey-light;
 
@@ -19,6 +19,12 @@
   gap: 24px;
   padding: 0;
   list-style: none;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social__link {
@@ -49,7 +55,8 @@
     mask-image: url("../img/sprite.svg#telegram");
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:active::before {
     background-color: $primary-color;
   }
 }
