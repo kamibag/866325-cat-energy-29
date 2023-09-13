@@ -12,6 +12,7 @@
   }
 
   @media (min-width: $desktop-min-width) {
+    position: static;
     padding-bottom: 80px;
   }
 
@@ -40,10 +41,9 @@
 
     @media (min-width: $desktop-min-width) {
       left: 50%;
-      top: -120px;
       display: block;
       width: 50%;
-      height: calc(100% + 120px);
+      height: 694px;
       background-image: $primary-linear-gradient,
         image-set(
           url("../img/content/top-cat-desktop.webp") type("image/webp") 1dppx,

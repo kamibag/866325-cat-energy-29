@@ -26,6 +26,10 @@
     grid-template-columns: auto 1fr;
     gap: 20px;
   }
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .header__logo-content {
@@ -36,6 +40,8 @@
   padding: 13px 0 14px;
 
   @media (min-width: $tablet-min-width) {
+    justify-self: start;
+    align-self: start;
     display: flex;
     justify-content: center;
     align-items: center;

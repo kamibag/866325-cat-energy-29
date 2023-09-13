@@ -80,6 +80,7 @@
   height: 40px;
   border: 2px solid $slide-bar-color;
   border-radius: 50%;
+  outline: none;
   background: $secondary-color;
 
   &:hover {
@@ -90,6 +91,10 @@
   &:active {
     border-color: $button-hover-color;
     opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid $primary-text-color;
   }
 
   &::before,
