@@ -41,4 +41,8 @@
 
 .title-container__inner {
   width: 187px;
+
+  @media (min-width: $tablet-min-width) {
+    width: auto;
+  }
 }
