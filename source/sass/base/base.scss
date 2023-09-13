@@ -15,16 +15,6 @@ a {
   --special-color: #{$special-color};
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  appearance: textfield;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);

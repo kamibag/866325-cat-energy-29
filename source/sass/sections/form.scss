@@ -157,6 +157,14 @@
   &:invalid + .form__text-icon {
     background-color: $status-error;
   }
+
+  &--number {
+    appearance: textfield;
+
+    &:hover {
+      appearance: auto;
+    }
+  }
 }
 
 .form__text-icon {
