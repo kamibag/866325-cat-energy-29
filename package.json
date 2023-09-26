@@ -19,14 +19,17 @@
     "postcss-csso": "5.0.1",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "^0.1.11",
-    "gulp-stacksvg": "^2.0.2"
+    "gulp-stacksvg": "^2.0.2",
+    "gh-pages": "^6.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
